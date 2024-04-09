@@ -158,3 +158,9 @@ Take part in any technical event, inter or intra college and submit the issued c
 participation.
 
 Enroll for a MOOC and complete the course.
+
+## TASK 16: Datasheets report writing:
+
+Topics: 1)MQ135 Gas sensor 2)L293D motor driver
+Task Description: Study the datasheet of any one of the above and write a report on it. Specify about the ICs used in L293D, PWM, H-bridge etc. In case of MQ 135, specify the calibrations for different gases and the Freundlich Absorption Theorem Graph.
+
