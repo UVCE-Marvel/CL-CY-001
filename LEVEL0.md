@@ -98,12 +98,16 @@ Refer to the linked article for further details
 
 ## TASK 9: Tinkercad
 
-Create a tinkercad account, get familiar with the application, understand the example circuits
-given and simulate the following using ultrasonic/infrared sensors, estimate the distance
-between an obstacle and the sensor. Display the results on a LCD screen.
-
-[Resource Article](https://www.geeksforgeeks.org/distance-measurement-using-ultrasonic-sensor-and-arduino/)
+Create a tinkercad account, get familiar with the application, understand the example circuits given and simulate a simple circuit using an ultrasonic sensor to estimate the distance between an obstacle and the sensor. Display the results on the serial monitor.
  
+Create a radar system utilising an ultrasonic sensor and servo motor to detect objects within a certain range. The ultrasonic sensor emits sound waves and measures the time taken for them to bounce back, while the servo motor rotates the sensor to cover a wider area, providing a simple yet effective detection mechanism.
+ RESOURCE: https://youtu.be/NwmcNCvUcDc?si=x2LAYMFiqs1SzLfI
+ TASK OUTCOME: introduction to-
+·        TINKERCAD
+·        Working of ultrasonic sensor and servo motor
+·        Radar technology
+PRECAUTIONS/SAFETY MEASURES- NOT ANY
+
 ## TASK 10: Speed Control of DC Motor
 
 Explore basic techniques for controlling DC motors, understand the control DC motors using the
