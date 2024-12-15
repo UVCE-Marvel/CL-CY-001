@@ -1,223 +1,100 @@
-## PRE-REQUISITES:
-●Good understanding of HTML,CSS, JS and Python.
-	
- 
- https://youtu.be/p0bGHP-PXD4?si=s08EKVPT3caNgzxN/
-https://www.w3schools.com/js/
-https://www.w3schools.com/python/
+# TASK 1: Working of a Version Control
+Start by reading and understanding the theory behind version control. Focus on the core concepts such as commits, branches, merges, and the role of repositories in version control.  
+Install Git on your machine and initialize a simple repository.  
 
-## Task 1: Linux Based Task with Socket.io
+**Task Outcome**: Practice using Git commands, such as `git branch`, `git merge`, `git revert` and `git cherry-pick`, in a hands-on way. Try working on both local and remote repositories (such as GitHub or GitLab) to see how they interact.  
 
-### Specific Task Description:
+**Resource Links**:  
+- [Git docs - videos](https://git-scm.com/doc)  
+- [Recommended Part 3 of this resource link](https://www.git-tower.com/learn/git/videos)  
 
-Set up a basic chat application using Node.js and Socket.io on a Linux system. The application should allow multiple users to connect and exchange messages in real-time.
 
-### Resource Links:
+# TASK 2: Database task - DynamoDB
+DynamoDB is a fully managed NoSQL database service provided by AWS. It is highly scalable, durable, and ideal for low-latency data storage. Below is a comprehensive guide covering key aspects of using DynamoDB, including table creation, security, monitoring, access control, and common mistakes to avoid.  
 
-- [Getting Started with Socket.io](https://dev.to/cglikpo/getting-started-with-socket-io-7m4)
-- [Building a Chat App - Intro to WebSockets](https://www.youtube.com/watch?v=J8xReLuBNPY&list=PL0Zuz27SZ-6NOkbTDxKi7grs_oxJhLu07)
-- [How to Build a Real-time Chat App with React, Node, Socket.io, and HarperDB](https://www.freecodecamp.org/news/build-a-realtime-chat-app-with-react-express-socketio-and-harperdb/)
-- [Build Node.js Apps with Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)
+**Task Outcome**: Take this course and complete all 5 hands-on labs, 8 playgrounds and one project. Attach the certificate in your report.  
+[Course Link](https://bit.ly/marvel_dynamodb)  
+Also learn about MySQL and NoSQL, and how they are different from each other.  
 
-### Expected Task Outcomes:
+**Resource Links**:  
+- [SQL vs MySQL vs NoSQL](https://iotbusinessnews.com/2022/06/13/02421-sql-vs-mysql-vs-nosql-how-do-they-differ-and-how-can-you-use-each-effectively/)  
 
-- Understanding of basic Linux commands
-- Proficiency in setting up a Node.js application
-- Familiarity with Socket.io for real-time communication
 
-### Precautions/Safety/Procedure to Complete the Task:
+# TASK 3: Create an application on EC2 instance
+The objective of this task is to guide you through the process of creating, configuring, and managing an EC2 instance on Amazon Web Services (AWS). By the end of this task, you will have a strong understanding of how to launch and configure EC2 instances, connect to them, and manage their security and performance.  
 
-- Ensure that Node.js is installed on your Linux system.
-- Use secure password practices when setting up user authentication.
-- Monitor system resources to avoid overloading the server during testing.
+**Task Outcome**: Build and run virtually any dynamic application.  
 
-### Equipment Needed to Complete the Task:
+**Resource Links**:  
+- [EC2 Instance creation Tutorial](https://aws.amazon.com/ec2/getting-started/)  
 
-- Computer with Linux operating system
-- Internet connection for downloading dependencies
 
-### Cost and Sustainability Plan:
+# TASK 4: AWS CloudFront - Serve content from multiple S3 buckets
+Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment. Whereas Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.  
 
-- Node.js and Socket.io are open-source and free to use.
+**Task Outcome**: Complete the below Amazon CloudFront Tutorials: Setting up a Dynamic Content Distribution for Amazon S3.  
 
+**Resource Links**:  
+- [AWS CloudFront Tutorials](https://aws.amazon.com/cloudfront/getting-started/S3/)  
 
 
+# TASK 5: Kali Linux
+The goal of this task is to introduce you to Kali Linux, a powerful Linux distribution used for penetration testing and security auditing. By the end of this task, you should understand how Kali Linux works. This task will introduce students to penetration testing concepts and tools.  
 
+**Task Outcome**: Perform a basic penetration test on a virtual machine using Kali Linux tools such as Nmap.  
 
-## Task 2: Git Bash and GitHub
+**Resource Links**:  
+- [Cybersecurity Labs: Kali Linux 2023 Guide for Beginners | Pentesting | VirtualBox](https://m.youtube.com/watch?v=MQekdvXoR4k)  
+- [Kali Linux Documentation and Installation](https://docs.kali.org)  
 
-### Specific Task Description:
 
-Set up a Git repository, commit some code changes, and push them to GitHub using Git Bash. This task will familiarize students with version control and collaborative coding practices.
+# TASK 6: Socket.IO
+Socket.IO allows bi-directional communication between client and server. Bi-directional communications are enabled when a client has Socket.IO in the browser, and a server has also integrated the Socket.IO package. While data can be sent in a number of forms, JSON is the simplest.  
 
-### Resource Links:
+**Task Outcome**: Set up a basic chat application using Node.js and Socket.IO on a Linux system. The application should allow multiple users to connect and exchange messages in real-time.  
 
-- [Git - Documentation](https://git-scm.com/doc)
-- [GitHub Docs](https://docs.github.com/)
+**Resource Links**:  
+- [Socket.IO Documentation](https://socket.io/docs)  
+- [Building a Chat App - Intro to WebSockets](https://socket.io/get-started/chat/)  
+- [How to Build a Real-time Chat App with React, Node, Socket.IO, and HarperDB](https://harperdb.io/blog/real-time-chat-app/)  
 
-### Expected Task Outcomes:
 
-- Proficiency in basic Git commands (add, commit, push)
-- Understanding of version control concepts such as branching and merging
-- Ability to collaborate on projects using GitHub
+# TASK 7: OSI
+The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network.  
 
-### Precautions/Safety/Procedure to Complete the Task:
+**Task Outcome**:  
+- Research and create a simple visual representation or diagram of the OSI model using a cloud-based diagramming tool like Draw.io.  
+- Learn about the OSI architecture along with the protocols, switching, routing, handshakes, and IP addressing.  
+- Write a brief explanation of each layer of the OSI model and how it relates to cloud computing!  
 
-- Double-check repository URLs before pushing changes to avoid accidental data loss.
-- Practice using Git commands in a safe, non-production environment.
+**Resource Links**:  
+- [OSI Model Complete Info](https://www.youtube.com/watch?v=vv4y_uOneC0)  
+- [What is OSI Model?](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model/)  
+- [Draw.io - To picturize the various layers](https://app.diagrams.net/)  
 
-### Equipment Needed to Complete the Task:
 
-- Computer with Git Bash installed
-- GitHub account for repository hosting
+# TASK 8: IaaS, PaaS and SaaS
+IaaS, PaaS, and SaaS are three primary cloud computing service models, each catering to different business needs and responsibilities in managing IT infrastructure and applications.  
 
+**Task Outcome**: Learn about the types of cloud computing and write a brief explanation of each.  
 
+**Resource Links**:  
+- [AWS: Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)  
 
 
+# TASK 9: Encryption Techniques - Secure Messaging App
+Learn and implement basic encryption and decryption programs using Python with the PyCrypto library. Learn about Ciphers, Caesar, Vigenère, and substitution cipher. Why is this different from encryption techniques like SHA256? Learn about symmetric and asymmetric keys (Public and Private keys). How are prime numbers used in RSA?  
 
-## Task 3: OSI MODEL
+**Task Outcome**: A simple chat application where messages are encrypted before being sent and decrypted upon receipt.  
 
-### Specific Task Description:
-- Research and create a simple visual representation or diagram of the OSI model using a cloud-based diagramming tool.
-- Write a brief explanation of each layer of the OSI model and how it relates to cloud computing!
+**Resource Links**:  
+- [Data Encryption Methods](https://www.splunk.com/en_us/blog/learn/data-encryption-methods-types.html)  
 
-### Resource Links:
-- [What is OSI Model?](https://youtu.be/Ilk7UXzV_Qc?si=I92OJQfF16bhlqey)
-- [draw.io - To picturise the various layers](https://app.diagrams.net/)
 
-### Expected Task Outcomes:
-- Understanding of the OSI Model: You will gain a solid understanding of the seven layers of the Open Systems Interconnection (OSI) model and their functions.
-- Cloud Computing Context: You will explore how each OSI layer plays a role in cloud computing infrastructure and communication.
-- Basic Diagramming Skills: You will gain practical experience in using a cloud-based tool for creating simple visuals.
+# TASK 10: IP Addressing and Web Scraping - Job Listings Scraper
+Use Python and libraries like BeautifulSoup to scrape IP address data from a website and analyze it. This task will reinforce understanding of IP addressing and protocols such as TCP/IP.  
 
-### Precautions/Safety/Procedure to Complete the Task:
-- None.
+**Task Outcome**: Extract job postings from platforms like Indeed, LinkedIn, or Glassdoor.  
 
-### Equipment Needed to Complete the Task:
-- Computer with Internet Access: You'll need a computer with an internet connection to access the research resources and the diagramming tool.
-- Cloud-Based Diagramming Tool: You can choose from various free options like draw.io (diagrams.net), Canva, or Visual Paradigm Online. Each tool has its own features and interface, so explore them to find the best fit for you.
-
-### Cost and Sustainability Plan:
-- Draw.io is a free cloud-based platform.
-
-## Task 4: Encryption Techniques
-
-### Specific Task Description:
-Implement a basic encryption and decryption program using Python with the PyCrypto library. This task will introduce students to cryptographic algorithms and their practical applications.
-
-### Resource Links:
-- [Cryptography | Read the Docs](https://readthedocs.org/projects/cryptography/)
-- [A Brief Introduction to Cryptography – Real Python](https://realpython.com/lessons/brief-intro-cryptography/)
-
-### Expected Task Outcomes:
-- Understanding of encryption principles and techniques.
-- Proficiency in implementing encryption algorithms using Python.
-- Ability to secure sensitive data using encryption and decryption processes.
-
-### Precautions/Safety/Procedure to Complete the Task:
-- Use strong encryption algorithms and key management practices to ensure data security.
-- Handle encryption keys securely to prevent unauthorized access to encrypted data.
-
-### Equipment Needed to Complete the Task:
-- Computer with Python installed.
-- PyCrypto library installed via pip.
-
-### Cost and Sustainability Plan:
-- PyCrypto is open-source and free to use.
-
-## Task 5: IP Addressing and Protocols
-
-### Specific Task Description:
-Use Python and libraries like Beautiful Soup to scrape IP address data from a website and analyze it. This task will reinforce understanding of IP addressing and protocols such as TCP/IP.
-
-### Resource Links:
-- [Web Scraping with Python - Beautiful Soup Crash Course](https://www.youtube.com/watch?v=XVv6mJpFOb0)
-- [The Python Standard Library](https://docs.python.org/3/library/)
-
-### Expected Task Outcomes:
-- Proficiency in web scraping techniques using Python.
-- Understanding of IP addressing and subnetting concepts.
-- Ability to extract and analyze IP address data from web sources.
-
-### Precautions/Safety/Procedure to Complete the Task:
-- Respect website terms of service and robots.txt rules when scraping data.
-- Handle scraped data ethically and responsibly, ensuring privacy and legal compliance.
-
-### Equipment Needed to Complete the Task:
-- Computer with Python installed.
-- Beautiful Soup library installed via pip.
-
-### Cost and Sustainability Plan:
-- Beautiful Soup is open-source and free to use.
-
-## Task 6: Kali Linux and SSH
-
-### Specific Task Description:
-Perform a basic penetration test on a virtual machine using Kali Linux tools such as Nmap. This task will introduce students to penetration testing concepts and tools.
-
-### Resource Links:
-- [Get Kali | Kali Linux](https://www.kali.org/downloads)
-- [Kali Docs | Kali Linux Documentation](https://www.kali.org/docs/)
-- [Nmap Network Scanning - Official Guide](https://nmap.org/book/)
-- [Cybersecurity Labs: Kali Linux 2023 Guide for Beginners | Pentesting | VirtualBox](https://m.youtube.com/watch?v=MQekdvXoR4k)
-
-### Expected Task Outcomes:
-- Understanding of penetration testing methodologies.
-- Proficiency in using Kali Linux tools for network reconnaissance.
-- Ability to identify vulnerabilities and assess security posture using Nmap.
-
-### Precautions/Safety/Procedure to Complete the Task:
-- Use penetration testing tools responsibly and with permission on authorized systems only.
-- Document findings and communicate responsibly to system owners or administrators.
-
-### Equipment Needed to Complete the Task:
-- Computer with Kali Linux installed (can be set up in a virtual machine).
-- Network access for conducting penetration tests.
-
-### Cost and Sustainability Plan:
-- Kali Linux is open-source and free to use.
-
-## Task 7: Databases
-
-### Specific Task Description:
-Set up a MySQL database and create a simple CRUD (Create, Read, Update, Delete) application using Node.js. This task will familiarize students with database management and querying.
-
-### Resource Links:
-- [Node.js MySQL tutorial](https://www.npmjs.com/package/mysqlhttps://www.npmjs.com/package/mysql)
-- [MySQL Documentation](https://dev.mysql.com/doc/)
-- [Node.js MySQL](https://www.w3schools.com/nodejs/nodejs_mysql.asp)
-
-### Expected Task Outcomes:
-- Understanding of database management concepts.
-- Proficiency in CRUD operations using Node.js and MySQL.
-- Ability to develop database-driven applications.
-
-### Precautions/Safety/Procedure to Complete the Task:
-- Use parameterized queries to prevent SQL injection vulnerabilities.
-- Backup database data regularly to prevent data loss.
-
-### Equipment Needed to Complete the Task:
-- Computer with Node.js and MySQL installed.
-- MySQL Workbench or similar tool for database management.
-
-### Cost and Sustainability Plan:
-- Node.js and MySQL are open-source and free to use.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-● Node.js and MySQL are open-source and free to use.
-
-
-
-
+**Resource Links**:  
+- [Web Scraping with Python - BeautifulSoup Crash Course](https://realpython.com/beautiful-soup-web-scraper-python/)  
