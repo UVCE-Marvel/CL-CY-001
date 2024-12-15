@@ -59,7 +59,7 @@ Socket.IO allows bi-directional communication between client and server. Bi-dire
 [How to Build a Real-time Chat App with React, Node, Socket.IO, and HarperDB](https://harperdb.io/blog/real-time-chat-app/)  
 
 
-# TASK 7: OSI
+## TASK 7: OSI
 The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network.  
 
 **Task Outcome**:  
@@ -73,7 +73,7 @@ The Open Systems Interconnection (OSI) model describes seven layers that compute
 [Draw.io - To picturize the various layers](https://app.diagrams.net/)  
 
 
-# TASK 8: IaaS, PaaS and SaaS
+## TASK 8: IaaS, PaaS and SaaS
 IaaS, PaaS, and SaaS are three primary cloud computing service models, each catering to different business needs and responsibilities in managing IT infrastructure and applications.  
 
 **Task Outcome**: Learn about the types of cloud computing and write a brief explanation of each.  
@@ -82,7 +82,7 @@ IaaS, PaaS, and SaaS are three primary cloud computing service models, each cate
 [AWS: Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)  
 
 
-# TASK 9: Encryption Techniques - Secure Messaging App
+## TASK 9: Encryption Techniques - Secure Messaging App
 Learn and implement basic encryption and decryption programs using Python with the PyCrypto library. Learn about Ciphers, Caesar, Vigenère, and substitution cipher. Why is this different from encryption techniques like SHA256? Learn about symmetric and asymmetric keys (Public and Private keys). How are prime numbers used in RSA?  
 
 **Task Outcome**: A simple chat application where messages are encrypted before being sent and decrypted upon receipt.  
