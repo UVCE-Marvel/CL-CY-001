@@ -94,7 +94,7 @@ Learn and implement basic encryption and decryption programs using Python with t
 ## TASK 10: IP Addressing and Web Scraping - Job Listings Scraper
 Use Python and libraries like BeautifulSoup to scrape IP address data from a website and analyze it. This task will reinforce understanding of IP addressing and protocols such as TCP/IP.  
 
-**Task Outcome**: Extract job postings from platforms like Indeed, LinkedIn, or Glassdoor.  
+**Task Outcome**: Extract job postings from platforms like Indeed or Glassdoor.  
 
 **Resource Links**:  
 [Web Scraping with Python - BeautifulSoup Crash Course](https://realpython.com/beautiful-soup-web-scraper-python/)  
