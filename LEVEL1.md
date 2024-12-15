@@ -91,7 +91,7 @@ Learn and implement basic encryption and decryption programs using Python with t
 [Data Encryption Methods](https://www.splunk.com/en_us/blog/learn/data-encryption-methods-types.html)  
 
 
-# TASK 10: IP Addressing and Web Scraping - Job Listings Scraper
+## TASK 10: IP Addressing and Web Scraping - Job Listings Scraper
 Use Python and libraries like BeautifulSoup to scrape IP address data from a website and analyze it. This task will reinforce understanding of IP addressing and protocols such as TCP/IP.  
 
 **Task Outcome**: Extract job postings from platforms like Indeed, LinkedIn, or Glassdoor.  
