@@ -14,11 +14,7 @@ DynamoDB is a fully managed NoSQL database service provided by AWS. It is highly
 
 **Task Outcome**: Create a Simple User Login System that stores and validates user credentials for login.
 Add user credentials.
-Validate login using username and password.
-*DynamoDB Usage:*  
-Table: Users  
-Partition key: Username  
-Attributes: PasswordHash  
+Validate login using username and password using DynamoDB
 Also learn about MySQL and NoSQL, and how they are different from each other.  
 
 **Resource Links**:  
