@@ -63,8 +63,10 @@ Docker can package an application and its dependencies in a virtual container th
 **Task Outcome**: Learn about Docker containers, images, and Dockerfiles. Complete the below Docker getting started course.  
 
 **Resource Links**:  
+[Docker Get Started](https://docs.docker.com/get-started/introduction/)  
 [What is Docker?](https://opensource.com/resources/what-docker)  
 [Docker Containers Overview](https://www.docker.com/resources/what-container/)  
+
 
 
 ## TASK 7: Docker File Spyware
