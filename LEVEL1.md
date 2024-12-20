@@ -12,13 +12,18 @@ Install Git on your machine and initialize a simple repository.
 ## TASK 2: Database task - DynamoDB
 DynamoDB is a fully managed NoSQL database service provided by AWS. It is highly scalable, durable, and ideal for low-latency data storage. Below is a comprehensive guide covering key aspects of using DynamoDB, including table creation, security, monitoring, access control, and common mistakes to avoid.  
 
-**Task Outcome**: Take this course and complete all 5 hands-on labs, 8 playgrounds and one project. Attach the certificate in your report.  
-[Course Link](https://bit.ly/marvel_dynamodb)  
+**Task Outcome**: Create a Simple User Login System that stores and validates user credentials for login.
+Add user credentials.
+Validate login using username and password.
+*DynamoDB Usage:*  
+Table: Users  
+Partition key: Username  
+Attributes: PasswordHash  
 Also learn about MySQL and NoSQL, and how they are different from each other.  
 
 **Resource Links**:  
 [SQL vs MySQL vs NoSQL](https://iotbusinessnews.com/2022/06/13/02421-sql-vs-mysql-vs-nosql-how-do-they-differ-and-how-can-you-use-each-effectively/)  
-
+[DynamoDB Course](https://simpli-web.app.link/e/6n44tlRmlNb) 
 
 ## TASK 3: Create an application on EC2 instance
 The objective of this task is to guide you through the process of creating, configuring, and managing an EC2 instance on Amazon Web Services (AWS). By the end of this task, you will have a strong understanding of how to launch and configure EC2 instances, connect to them, and manage their security and performance.  
