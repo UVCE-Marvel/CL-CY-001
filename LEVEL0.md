@@ -54,28 +54,80 @@ B56.
 
 https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
 
+## Task 5 : *Build Your Own Brain* -Linear Regression from Scratch
 
-## TASK 5: Kaggle contest
-Make a kaggle account, visit the website and complete the competition
+Dive into the core of machine learning by implementing **Linear Regression from scratch** using , and compare its performance with the **scikit-learn implementation**. Use the **California Housing dataset** to evaluate your model on real-world data.
+<br>
+### Your Task:
+- Implement linear regression manually (without using ML libraries for training).
+- Understand and apply gradient descent to minimize error.
+- Compare your custom model’s performance against `sklearn.linear_model.LinearRegression` .
+- You should analyze results by:
+	 * Graph showing line of best fit and the datapoints.
+	 * Performance metrics: MSE, MAE, R² for both custom and scikit-learn models.
+	 * Brief comparison between two models.
+<br>
+[Download Dataset](https://www.kaggle.com/datasets/camnugent/california-housing-prices)
+### Learn Linear Regression:
+1. Understanding :
+     - [Linear Regression](https://www.geeksforgeeks.org/ml-linear-regression/)
+     -  [Gradient Descent](https://youtu.be/sDv4f4s2SB8?feature=shared)
 
-Participate in the Titanic ML competition – the best, first challenge for you to dive into ML
-competitions and familiarize yourself with how the Kaggle platform works.The competition is
-simple: use machine learning to create a model that predicts which passengers survived the
-Titanic shipwreck.
+2. Coding the linear regression algorithm from scratch:
+- https://towardsdatascience.com/coding-linear-regression-from-scratch-c42ec079902
+- https://www.askpython.com/python/examples/linear-regression-from-scratch
+- https://medium.com/data-science/linear-regression-using-gradient-descent-97a6c8700931
 
-Resources:
-Titanic regression model - https://www.kaggle.com/c/titanic
+### Expected Outcomes:
 
-Video reference - https://youtu.be/I3FBJdiExcg
+- Grasp how gradient descent optimizes weights in linear regression.
+- Understand the importance of feature scaling.
+- Know how to evaluate regression models using standard metrics.
+- Be able to appreciate the convenience and performance of inbuilt ML libraries.
 
+### Precautions:
 
-## TASK 6: Working with Pandas and Matplotlib:
+- Always normalize or standardize features before training your scratch model, especially if you’re using gradient descent.
+- Be cautious with your **learning rate** , too small and the model is slow, too large and it may diverge.
+- Initialize weights and bias properly ( small random values or zeros).
 
-Using pandas and matplotlib, and a dataset of your choice, plot a line graph, bar graph, and
-scatter plot.
+## Task 6 : The Matrix Puzzle — Decode with NumPy & Reveal the Image
 
-Reference:
-https://realpython.com/pandas-plot-python/
+Get hands-on with NumPy and Matplotlib by solving a visual puzzle. You’ll be given a scrambled matrix, and your mission is to decode it into a hidden image using NumPy operations and visualization techniques.
+
+### Your Task:
+* Download the scrambled matrix from the link provided.
+* Use your knowledge of NumPy to manipulate, reshape, and reorient the matrix.
+* Reveal the secret image by plotting it using `matplotlib.pyplot.imshow()` .
+* Scrambled Matrix: [Download Here](https://drive.google.com/file/d/1YDwFs-nnAwevVfPdvcjLMhhNA3gEnUxO/view?usp=drive_link)
+* NumPy Learning Doc: [Explore Here](https://colab.research.google.com/drive/1WHwChJ-8PO8sPuY0NM-5UpHP98Fjj5bA?usp=sharing)
+
+### Learn NUMPY:
+
+* https://youtu.be/QUT1VHiLmmI?feature=shared
+* https://www.w3schools.com/python/numpy/default.asp
+* https://www.datacamp.com/tutorial/python-numpy-tutorial
+* [Official Documentation](https://numpy.org/doc/2.2/)
+
+### Learn Matplotlib:
+
+* [Official Documentation](https://matplotlib.org/stable/index.html)
+* https://www.datacamp.com/tutorial/matplotlib-tutorial-python
+* https://youtu.be/3Xc3CA655Y4?feature=shared
+
+Decode the Matrix using these clues and Visualize it :
+* `"Try reshaping the encoded array into a square—how many elements are there?"`
+* `"The structure may be upright, but the data might be sideways. Look at its orientation."`
+* `"Sometimes the end is actually the beginning."`
+
+### Expected Outcomes:
+- Gain confidence with NumPy operations like reshaping, slicing, flipping, and transposing.
+- Learn to visualize 2D arrays using Matplotlib.
+- Sharpen your debugging and puzzle-solving skills in a fun context.
+
+### Precautions:
+- Check the shape of the array before applying `imshow()` - wrong dimensions will throw errors.
+- Ensure that your reshaped matrix has the correct number of elements (it's likely a square!).
 
 
 ## TASK 7: Create a Portfolio Webpage
