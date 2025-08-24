@@ -99,7 +99,7 @@ Get hands-on with NumPy and Matplotlib by solving a visual puzzle. You’ll be g
 * Download the scrambled matrix from the link provided.
 * Use your knowledge of NumPy to manipulate, reshape, and reorient the matrix.
 * Reveal the secret image by plotting it using `matplotlib.pyplot.imshow()` .
-* Scrambled Matrix: [Download Here](https://drive.google.com/file/d/1YDwFs-nnAwevVfPdvcjLMhhNA3gEnUxO/view?usp=drive_link)
+* Scrambled Matrix: [Download Here](https://drive.google.com/file/d/1JV26iyjRkuNCYu-QuDKz9CLV40Ib873W/view?usp=drive_link)
 * NumPy Learning Doc: [Explore Here](https://colab.research.google.com/drive/1WHwChJ-8PO8sPuY0NM-5UpHP98Fjj5bA?usp=sharing)
 
 ### Learn NUMPY:
