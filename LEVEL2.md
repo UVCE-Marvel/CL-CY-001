@@ -74,7 +74,9 @@ Contanarize the web application which is developed in level 0. Create backend do
 
 **Task Outcome:** Discover and learn about Docker networking, volumes and storage.	   
 **Resource Links**:    
-[Docker Networking](https://docs.docker.com/engine/network/)
+[Docker Networking](https://docs.docker.com/engine/network/)   
+[Docker Volumes](https://docs.docker.com/engine/storage/volumes/)  
+
 
 ## TASK 8: Web Scraping and Automation - Flight Ticket Price Analysis
 While planning a vacation, we all desire to spend the minimum on flight tickets, but it is not always possible. Occasionally, the prices go significantly down at odd timings. If you could understand them, it would mean you will get the chance of booking your tickets near your travel date.  
