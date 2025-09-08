@@ -17,7 +17,7 @@ In this task, you will explore the concept of Continuous Integration and Continu
 - Save the `Jenkinsfile` to your repository.  
 
 **Resource Links**:  
-[Jenkins Full Course | Jenkins Tutorial For Beginners | Jenkins Tutorial | Simplilearn  ](https://www.youtube.com/watch?v=FX322RVNGj4)
+[Jenkins Full Course | Jenkins Tutorial For Beginners | Jenkins Tutorial | Simplilearn](https://www.youtube.com/watch?v=FX322RVNGj4)
 [Jenkins User Documentation](https://www.jenkins.io/doc/)  
 
 
