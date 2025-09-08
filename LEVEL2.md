@@ -69,17 +69,12 @@ Docker can package an application and its dependencies in a virtual container th
 
 
 
-## TASK 7: Docker File Spyware
-While a Dockerfile itself isn't spyware, it can be used to build Docker images that contain malicious code.  
+## TASK 7: Dockerize ( without using yaml file )
+Contanarize the web application which is developed in level 0. Create backend dockerfile and pull the database image ( frontend dockerfile if needed ) mount all the containers to the same bridge network.
 
-**Task Outcome**: Write a Dockerfile spyware that constantly monitors a folder and sends all images posted into that folder to another server.  
-
+**Task Outcome:** Discover and learn about Docker networking, volumes and storage.	
 **Resource Links**:  
-[Dockerfile Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)  
-[What is Spyware?](https://www.juniper.net/us/en/research-topics/what-is-spyware.html)  
-[Building a Hacking Tool with Python](https://null-byte.wonderhowto.com/forum/building-our-own-hacking-tool-python-part-1-getting-shell-0177200/)  
-[Car Hacking with Python](https://infosecwriteups.com/car-hacking-with-python-part-1-data-exfiltration-gps-and-obdii-can-bus-69bc6b101fd1)  
-
+[Docker Networking](https://docs.docker.com/engine/network/)
 
 ## TASK 8: Web Scraping and Automation - Flight Ticket Price Analysis
 While planning a vacation, we all desire to spend the minimum on flight tickets, but it is not always possible. Occasionally, the prices go significantly down at odd timings. If you could understand them, it would mean you will get the chance of booking your tickets near your travel date.  
