@@ -73,6 +73,7 @@ Docker can package an application and its dependencies in a virtual container th
 Contanarize the web application which is developed in level 0. Create backend dockerfile and pull the database image ( frontend dockerfile if needed ) mount all the containers to the same bridge network.
 
 **Task Outcome:** Discover and learn about Docker networking, volumes and storage.	   
+  
 **Resource Links**:    
 [Docker Networking](https://docs.docker.com/engine/network/)   
 [Docker Volumes](https://docs.docker.com/engine/storage/volumes/)   
