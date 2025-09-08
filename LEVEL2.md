@@ -1,7 +1,7 @@
 ## TASK 1: AWS Lambda
 AWS Lambda is an event-driven, serverless Function as a Service (FaaS) provided by Amazon as a part of Amazon Web Services. It is designed to enable developers to run code without provisioning or managing servers. It executes code in response to events and automatically manages the computing resources required by that code. From this task, you will learn the basics of running code on AWS Lambda without provisioning or managing servers.  
 
-**Task Outcome**: Deploy the chat app using AWS Lambda.  
+**Task Outcome**: Deploy the chat app using AWS Lambda.    
 **Resource Links**:  
 [Run Serverless Code - AWS](https://aws.amazon.com/tutorials/run-serverless-code/)  
 
@@ -72,8 +72,8 @@ Docker can package an application and its dependencies in a virtual container th
 ## TASK 7: Dockerize ( without using yaml file )
 Contanarize the web application which is developed in level 0. Create backend dockerfile and pull the database image ( frontend dockerfile if needed ) mount all the containers to the same bridge network.
 
-**Task Outcome:** Discover and learn about Docker networking, volumes and storage.	
-**Resource Links**:  
+**Task Outcome:** Discover and learn about Docker networking, volumes and storage.	   
+**Resource Links**:    
 [Docker Networking](https://docs.docker.com/engine/network/)
 
 ## TASK 8: Web Scraping and Automation - Flight Ticket Price Analysis
