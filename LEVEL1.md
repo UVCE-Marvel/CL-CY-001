@@ -1,101 +1,167 @@
-## TASK 1: Working of a Version Control
-Start by reading and understanding the theory behind version control. Focus on the core concepts such as commits, branches, merges, and the role of repositories in version control.  
-Install Git on your machine and initialize a simple repository.  
+## CL - Cloud Computing
 
-**Task Outcome**: Practice using Git commands, such as `git branch`, `git merge`, `git revert` and `git cherry-pick`, in a hands-on way. Try working on both local and remote repositories (such as GitHub or GitLab) to see how they interact.  
+### **Task 1: Working with Git and GitHub Basics**
 
-**Resource Links**:  
-[Git docs - videos](https://git-scm.com/doc)  
-[Recommended Part 3 of this resource link](https://www.git-tower.com/learn/git/videos)  
-
-
-## TASK 2: Database task - DynamoDB
-DynamoDB is a fully managed NoSQL database service provided by AWS. It is highly scalable, durable, and ideal for low-latency data storage. Below is a comprehensive guide covering key aspects of using DynamoDB, including table creation, security, monitoring, access control, and common mistakes to avoid.  
-
-**Task Outcome**: Create a Simple User Login System that stores and validates user credentials for login.
-Add user credentials.
-Validate login using username and password using DynamoDB
-Also learn about MySQL and NoSQL, and how they are different from each other.  
-
-**Resource Links**:  
-[SQL vs MySQL vs NoSQL](https://iotbusinessnews.com/2022/06/13/02421-sql-vs-mysql-vs-nosql-how-do-they-differ-and-how-can-you-use-each-effectively/)  
-[DynamoDB Course](https://simpli-web.app.link/e/6n44tlRmlNb) 
-
-## TASK 3: Create an application on EC2 instance
-The objective of this task is to guide you through the process of creating, configuring, and managing an EC2 instance on Amazon Web Services (AWS). By the end of this task, you will have a strong understanding of how to launch and configure EC2 instances, connect to them, and manage their security and performance.  
-
-**Task Outcome**: Build and run virtually any dynamic application.  
-
-**Resource Links**:  
-[EC2 Instance creation Tutorial](https://aws.amazon.com/ec2/getting-started/)  
+**Task Description**  
+Start by understanding version control. Practice cloning repositories, making changes, committing those changes, and pushing them back to GitHub. Create branches and open pull requests to simulate collaborative workflows. Learn to review and merge pull requests to complete the development cycle. 
+  
+**Expected Task Outcomes**  
+•	Understand the fundamentals of version control and distributed repositories   
+•	Learn how to solve merge conflict - git rebase   
+•	Create and manage branches for feature development    
+•	Contribute to atleast one open source project   
+• Implement and learn about git revert, git cherry-pick  
+• Create a customized Git workflow - Git config   
+    
+**Resource Links**  
+•	Git Official Documentation: https://git-scm.com/doc     
+•	GitHub Learning Lab: https://github.com/apps/github-learning-lab   
+•	Pro Git Book (free): https://git-scm.com/book/en/v2    
 
 
-## TASK 4: AWS CloudFront - Serve content from multiple S3 buckets
-Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment. Whereas Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.  
+### **Task 2: Exploring Docker Fundamentals**
+**Task Description**  
+Begin with learning the difference between containers and virtual machines. Practice using Docker CLI commands to pull images from Docker Hub, run containers, inspect running processes, view logs, and manage container lifecycles such as stopping and removing containers.  
+  
+**Expected Task Outcomes**  
+•	Articulate the key differences between containers and virtual machines  
+•	Pull images from Docker Hub and run containers using CLI commands   
+•	Inspect running processes, view container logs, and understand container state  
+•	Manage full container lifecycles: start, stop, restart, and remove   
+  
+**Resource Links**  
+•	Docker Official Documentation: https://docs.docker.com/  
+•	Docker Hub: https://hub.docker.com/   
+•	Play with Docker (browser-based lab): https://labs.play-with-docker.com/   
 
-**Task Outcome**: Complete the below Amazon CloudFront Tutorials: Setting up a Dynamic Content Distribution for Amazon S3.  
+### **Task 3: Dockerize a Simple Application**  
 
-**Resource Links**:  
-[AWS CloudFront Tutorials](https://aws.amazon.com/cloudfront/getting-started/S3/)  
-
-
-## TASK 5: Kali Linux
-The goal of this task is to introduce you to Kali Linux, a powerful Linux distribution used for penetration testing and security auditing. By the end of this task, you should understand how Kali Linux works. This task will introduce students to penetration testing concepts and tools.  
-
-**Task Outcome**: Perform a basic penetration test on a virtual machine using Kali Linux tools such as Nmap.  
-
-**Resource Links**:  
-[Cybersecurity Labs: Kali Linux 2023 Guide for Beginners | Pentesting | VirtualBox](https://m.youtube.com/watch?v=MQekdvXoR4k)  
-[Kali Linux Documentation and Installation](https://docs.kali.org)  
-
-
-## TASK 6: Socket.IO
-Socket.IO allows bi-directional communication between client and server. Bi-directional communications are enabled when a client has Socket.IO in the browser, and a server has also integrated the Socket.IO package. While data can be sent in a number of forms, JSON is the simplest.  
-
-**Task Outcome**: Set up a basic chat application using Node.js and Socket.IO on a Linux system. The application should allow multiple users to connect and exchange messages in real-time.  
-
-**Resource Links**:  
-[Socket.IO Documentation](https://socket.io/docs)  
-[Building a Chat App - Intro to WebSockets](https://socket.io/get-started/chat/)  
-[How to Build a Real-time Chat App with React, Node, Socket.IO, and HarperDB](https://harperdb.io/blog/real-time-chat-app/)  
-
-
-## TASK 7: OSI
-The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network.  
-
-**Task Outcome**:  
-- Research and create a simple visual representation or diagram of the OSI model using a cloud-based diagramming tool like Draw.io.  
-- Learn about the OSI architecture along with the protocols, switching, routing, handshakes, and IP addressing.  
-- Write a brief explanation of each layer of the OSI model and how it relates to cloud computing!  
-
-**Resource Links**:  
-[OSI Model Complete Info](https://www.youtube.com/watch?v=vv4y_uOneC0)  
-[What is OSI Model?](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model/)  
-[Draw.io - To picturize the various layers](https://app.diagrams.net/)  
+**Task Description**   
+Learn Dockerfile basics and how to containerize applications. Write a Dockerfile for a simple static website or API provided as starter code. Build your Docker image from this Dockerfile and run the application container locally. Verify successful deployment by accessing the app from your browser.  
+  
+**Expected Task Outcomes**   
+•	Write a functional Dockerfile to containerize a provided application  
+•	Build a Docker image and run it as a container on your local machine  
+•	Map container ports to the host machine to access the app in a browser   
+•	Understand image layers and how each Dockerfile instruction creates a layer   
+  
+**Resource Links**   
+•	Dockerfile Reference: https://docs.docker.com/engine/reference/builder/   
+•	Best Practices for Writing Dockerfiles: https://docs.docker.com/develop/develop-images/dockerfile_best-practices/  
 
 
-## TASK 8: IaaS, PaaS and SaaS
-IaaS, PaaS, and SaaS are three primary cloud computing service models, each catering to different business needs and responsibilities in managing IT infrastructure and applications.  
+### **Task 4: Launch and Manage an AWS EC2 Instance**  
 
-**Task Outcome**: Learn about the types of cloud computing and write a brief explanation of each.  
+**Task Description**  
+Explore AWS EC2 service and different instance types. Launch a free-tier EC2 instance, configure the security group to allow SSH access, and connect securely using SSH. Install a lightweight web server such as Nginx or Apache on the instance and ensure it is accessible via the public IP. Also, understand how CPU and memory work in a VM.  
+  
+**Expected Task Outcomes**   
+•	Launch an EC2 instance using the AWS Free Tier and configure its security group  
+•	Connect to the instance securely over SSH using a .pem key pair  
+•	Install and start a web server (Nginx or Apache) and confirm access via public IP  
+•	Understand EC2 instance types, CPU credits, and memory allocation in cloud VMs  
+  
+**Resource Links**   
+•	AWS EC2 Getting Started Guide: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html  
+•	AWS Free Tier Details: https://aws.amazon.com/free/  
+•	Nginx Beginner's Guide: https://nginx.org/en/docs/beginners_guide.html  
+  
+### **Task 5: Kubernetes Basics and Writing Pod Specs**
 
-**Resource Links**:  
-[AWS: Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)  
+**Task Description**  
+Understand key Kubernetes concepts and the structure of YAML manifest files. Write a simple Pod specification YAML to run a basic container (e.g., Nginx). Apply the manifest to your Minikube cluster and verify the Pod is running. Explore commands to get Pod status and logs.  
+  
+**Expected Task Outcomes**  
+•	Explain core Kubernetes concepts: Nodes, Pods, Clusters, and the Control Plane  
+•	Write a valid Pod manifest YAML file to deploy a container image  
+•	Apply manifests to a local Minikube cluster using kubectl  
+•	Use kubectl commands to inspect Pod status, describe Pods, and view logs    
+  
+**Resource Links**  
+•	Kubernetes Official Documentation: https://kubernetes.io/docs/home/  
+•	Minikube Getting Started: https://minikube.sigs.k8s.io/docs/start/  
+•	Kubernetes YAML Basics: https://kubernetes.io/docs/concepts/workloads/pods/  
 
 
-## TASK 9: Encryption Techniques - Secure Messaging App
-Learn and implement basic encryption and decryption programs using Python with the PyCrypto library. Learn about Ciphers, Caesar, Vigenère, and substitution cipher. Why is this different from encryption techniques like SHA256? Learn about symmetric and asymmetric keys (Public and Private keys). How are prime numbers used in RSA?  
+### **Task 6: Manage AWS S3 and IAM with CLI**  
 
-**Task Outcome**: A simple chat application where messages are encrypted before being sent and decrypted upon receipt.  
-
-**Resource Links**:  
-[Data Encryption Methods](https://www.splunk.com/en_us/blog/learn/data-encryption-methods-types.html)  
-
-
-## TASK 10: IP Addressing and Web Scraping - Job Listings Scraper
-Use Python and libraries like BeautifulSoup to scrape IP address data from a website and analyze it. This task will reinforce understanding of IP addressing and protocols such as TCP/IP.  
-
-**Task Outcome**: Extract job postings from platforms like Indeed or Glassdoor.  
-
-**Resource Links**:  
-[Web Scraping with Python - BeautifulSoup Crash Course](https://realpython.com/beautiful-soup-web-scraper-python/)  
+**Task Description**  
+Study AWS IAM concepts like users, roles, and policies, and learn to configure the AWS CLI. Create an IAM user with permissions to access S3, then create an S3 bucket from the CLI. Practice uploading, listing, and downloading files to/from the bucket using AWS CLI commands, reinforcing cloud storage handling.  
+   
+**Expected Task Outcomes**  
+•	Understand IAM concepts: users, groups, roles, and least-privilege policies  
+•	Configure the AWS CLI with credentials and verify connectivity to AWS services  
+•	Create an S3 bucket and manage objects via CLI (upload, list, download, delete)  
+•	Apply IAM policies to restrict S3 access to specific users or roles  
+   
+**Resource Links**  
+•	AWS IAM Documentation: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html  
+•	AWS CLI S3 Command Reference: https://docs.aws.amazon.com/cli/latest/reference/s3/  
+•	AWS S3 Getting Started: https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html  
+  
+  
+### **Task 7: Deploy a Containerized Application on Kubernetes**  
+**Task Description**  
+Learn to write YAML manifests for Kubernetes deployments and services. Package your Dockerized app and deploy it using YAML files. Expose the app within the cluster via ClusterIP and externally using NodePort.   Validate by accessing the app through the configured NodePort on your local machine.  
+  
+**Expected Task Outcomes**  
+•	Write Deployment YAML to deploy multiple replicas of a containerized application  
+•	Expose the deployment within the cluster using a ClusterIP Service  
+•	Expose the deployment externally using a NodePort Service and access it in a browser  
+•	Scale deployments up and down using kubectl and observe rolling updates  
+  
+**Resource Links**  
+•	Kubernetes Deployments: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/  
+•	Kubernetes Services: https://kubernetes.io/docs/concepts/services-networking/service/  
+  
+  
+### **Task 8: Use Kubernetes Secrets and Environment Variables**  
+  
+**Task Description**  
+Understand how to handle sensitive data and configuration within Kubernetes using Secrets and ConfigMaps. Create a ConfigMap and mount it onto a deployment and let the underlying application use the configuration. Create a Kubernetes Secret with AWS credentials, update deployment YAML to use these Secrets as environment variables, and deploy the updated app. Verify that the app uses the credentials securely to interact with AWS S3.  
+   
+**Expected Task Outcomes**  
+•	Create and apply ConfigMaps to inject non-sensitive configuration into Pods  
+•	Create Kubernetes Secrets to store AWS credentials without hardcoding them  
+•	Mount Secrets as environment variables in a Deployment and verify their consumption  
+•	Understand the difference between Secrets and ConfigMaps and when to use each 
+  
+**Resource Links**  
+•	Kubernetes Secrets: https://kubernetes.io/docs/concepts/configuration/secret/  
+•	Kubernetes ConfigMaps: https://kubernetes.io/docs/concepts/configuration/configmap/  
+  
+### **Task 9: Deploy an App to Push Files from Kubernetes to S3**  
+  
+**Task Description**  
+Build and deploy an application on Kubernetes capable of pushing files from a locally hosted app server to AWS S3. Use Kubernetes Secrets for storing AWS credentials securely. Validate the file upload process from the app interface to the S3 bucket and verify files in the cloud storage.   
+  
+**Expected Task Outcomes**  
+•	Build and containerize a file-upload application using a language/framework of your choice  
+•	Deploy the app on Minikube with AWS credentials injected via Kubernetes Secrets  
+•	Successfully upload a file from the app UI/CLI and verify it appears in the S3 bucket  
+•	Integrate all Level 1 concepts: Docker, Kubernetes, IAM, S3, and Secrets into one working pipeline  
+  
+**Resource Links**  
+•	AWS SDK for Python (boto3): https://boto3.amazonaws.com/v1/documentation/api/latest/index.html  
+•	AWS SDK for Node.js: https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/  
+•	Kubernetes Secrets in Pods: https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/  
+  
+---  
+  
+## CY - Cybersecurity  
+Welcome to the Marvel Cybersecurity Module.    
+Level 1 of this module is designed to build a strong foundation by covering the essentials of computer networking, protocols, Windows, Linux, and core cybersecurity principles. These fundamentals are crucial—  cybersecurity is not just about tools, but about understanding how systems work.  
+At its core, cybersecurity follows simple logic:  
+ _You can’t protect what you can’t see (or don’t understand), and you can’t break what you don’t know.  
+ That’s why mastering these basics is the first step toward becoming skilled in both defending and attacking systems._  
+Once you complete Level 1, we’ll move into the more exciting part—hands-on hacking and defense techniques. Stay tuned!  
+   
+Getting Started  
+To begin, you’ll need access to a platform called TryHackMe, where all course materials are hosted. Please follow the steps below to create your account:   
+Step 1: Go to https://tryhackme.com/  
+Step 2: Click on “Join for FREE” (top-right corner)  
+<img width="1167" height="666" alt="image" src="https://github.com/user-attachments/assets/36527282-5926-4c61-b93f-0310bfa81ef9" />  
+Step 3: Sign up using your Google, LinkedIn, or email account  
+Step 4: Complete any required details (password, captcha, etc.)  
+Step 5: Finish the introductory tour on the platform  
+Step 6: Access the Level 1 module using the link below: https://tryhackme.com/jr/uvce_marvel_level1  
