@@ -166,6 +166,8 @@ Build the habit of inspecting an application's behaviour while it is running. Le
 • kubectl port-forward reference: https://kubernetes.io/docs/reference/kubectl/generated/kubectl_port-forward/  
 
 
+---
+
 ## CY - Cybersecurity
 
 ### **Red Team Path**
