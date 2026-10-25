@@ -9,11 +9,11 @@ slice it and put it for print.
 
 Resources:
 
-● [Introduction to 3d printer](https://www.youtube.com/watch?v=kM5zRO3n9-Y)
+- [Introduction to 3d printer](https://www.youtube.com/watch?v=kM5zRO3n9-Y)
 
-● [PLA settings](https://standardprintco.com/read/pla-filament-printing-guide-how-to-succeed-printing-pla-and-troubleshooting-common-problems-step-by-step)
+- [PLA settings](https://standardprintco.com/read/pla-filament-printing-guide-how-to-succeed-printing-pla-and-troubleshooting-common-problems-step-by-step)
 
-● [Types of 3D printing](https://formlabs.com/asia/blog/fdm-vs-sla-vs-sls-how-to-choose-the-right-3d-printing-technology/)
+- [Types of 3D printing](https://formlabs.com/asia/blog/fdm-vs-sla-vs-sls-how-to-choose-the-right-3d-printing-technology/)
 
 (Note this task is to be done under coordinator supervision.)
 ![3dprinter](https://gist.github.com/user-attachments/assets/6339d1a8-82d4-4631-8fd6-af7d77de983f)
@@ -25,7 +25,7 @@ What is an API? [Learn](https://www.youtube.com/watch?v=s7wmiS2mSXY) the working
 build an user interface(web app, mobile app, etc), where you can make calls and then display
 the necessary information. An example weather app is given below, using the open weather api.
 
-● [Example](https://www.youtube.com/watch?v=HAVPicZJ9ik&feature=youtu.be)
+- [Example](https://www.youtube.com/watch?v=HAVPicZJ9ik&feature=youtu.be)
 
 
 ## TASK 3: Working with Github
@@ -38,19 +38,19 @@ Check this link for more info:
 https://github.com/UVCE-Marvel/git-task
 
 
-## TASK 4: Get familiar with the command line on ubuntu and do the following subtasks:
-● Create a folder named test.
+## TASK 4: Command Line on Ubuntu
+- Create a folder named test.
 
-● cd into that folder.
+- cd into that folder.
 
-● Create a blank file without using any text editor.
+- Create a blank file without using any text editor.
 
-● list the files in that folder
+- list the files in that folder
 
-● create 2600 folders in this folder where each folder is named like . For example, M90 or
+- create 2600 folders in this folder where each folder is named like . For example, M90 or
 B56.
 
-● concatenate two text files containing any random text and display them on the terminal.
+- concatenate two text files containing any random text and display them on the terminal.
 
 https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
 
@@ -193,13 +193,13 @@ LED circuit in the presence of a coordinator and document the same.
 [Reference](https://www.makerspaces.com/how-to-solder/)
 
 
-## TASK 13:
+## TASK 13: 555 Astable Multivibrator
 
 Design a 555 astable multivibrator with duty cycle 60%, rig up the circuit on a breadboard and
 by using the probes observe the output of your circuit on the DSO.
 Resources:
 
-● [Circuit](https://www.electronics-tutorials.ws/waveforms/555_oscillator.html)
+- [Circuit](https://www.electronics-tutorials.ws/waveforms/555_oscillator.html)
 
 
 ## TASK 14: Karnaugh Maps and Deriving the logic circuit
@@ -211,13 +211,13 @@ when certain conditions are met, you can use push buttons for the door and key.
 (Tip: use logic gates, use k-maps to figure out the working conditions.)
 
 
-## TASK 15: Active Participation:
+## TASK 15: Active Participation
 
 Take part in any technical event, inter or intra college and submit the issued certificate of
 participation.
 
 Enroll for a MOOC and complete the course.
-## TASK 16: Datasheets report writing:
+## TASK 16: Datasheets Report Writing
 Topics: 1)MQ135 Gas sensor 2)L293D motor driver
 Task Description: Study the datasheet of any one of the above and write a report on it. Specify about the ICs used in L293D, PWM, H-bridge etc. In case of MQ 135, specify the calibrations for different gases and the Freundlich Absorption Theorem Graph.
 
@@ -232,9 +232,9 @@ Familiarise yourself with what Virtual Reality is. Make a detailed study about w
 ## TASK 18: Sad servers - "Like LeetCode for Linux"
 Sadservers is an excellent ground to test your Linux troubleshooting skills.  Here is a troubleshooting scenario: Command Line Murders. Troubleshoot and Make Sad Servers Happy!  
 
-[Command line murder](https://sadservers.com/scenario/command-line-murders )  
-[Linux commands]( https://www.hostinger.com/tutorials/linux-commands )    
-     		      [Linux commands]( https://github.com/vvvvvvss/learnLinux )   
+- [Command Line Murders (SadServers)](https://sadservers.com/scenario/command-line-murders)
+- [Linux Commands Tutorial (Hostinger)](https://www.hostinger.com/tutorials/linux-commands)
+- [Learn Linux Commands (GitHub)](https://github.com/vvvvvvss/learnLinux)   
 
 ## Task 19: Make a Web app
 Using express create a resource library website where you can browse the resource articles, books etc which are available and also manage your account  
