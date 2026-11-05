@@ -380,26 +380,12 @@ Design a 555 astable multivibrator whose output has a **60% duty cycle**, build 
 6. **Measure:** Record the period, frequency, high time (t_high), and low time (t_low), and compute the measured duty cycle using the DSO's cursor or automatic measurement tools.
 7. **Compare:** Tabulate designed vs. calculated-with-real-parts vs. measured values, and explain any differences (component tolerances, internal transistor drops, parasitic breadboard capacitance).
 
-### Comparison Table Template
-
-```text
-+--------------------+---------------------------------------+----------------+-------------------------+----------------+---------+
-|     Parameter      |                Formula                | Designed Value | Calculated (Real Parts) | Measured (DSO) | % Error |
-+--------------------+---------------------------------------+----------------+-------------------------+----------------+---------+
-| Frequency (f)      | f = 1.44 / ((R1 + 2*R2) * C)          | 1 kHz          |                         |                |         |
-| Duty Cycle (D)     | D = ((R1 + R2) / (R1 + 2*R2)) * 100%  | 60%            |                         |                |         |
-| High Time (t_high) | t_high = 0.693 * (R1 + R2) * C        | 0.60 ms        |                         |                |         |
-| Low Time (t_low)   | t_low = 0.693 * R2 * C                | 0.40 ms        |                         |                |         |
-| Period (T)         | T = t_high + t_low                    | 1.00 ms        |                         |                |         |
-+--------------------+---------------------------------------+----------------+-------------------------+----------------+---------+
-```
-
 ### Deliverables
 1. **Design Sheet:** Calculations showing the derived R1/R2 ratio, chosen capacitor value, calculated resistor values, and recalculated metrics for real parts.
 2. **Circuit Schematic:** Labeled diagram with pin numbers and component values.
 3. **Breadboard Photo:** High-resolution image of the wired circuit with DSO probe connected.
 4. **DSO Screenshot/Photo:** Waveform showing at least 2 full periods with measured frequency and duty cycle parameters visible.
-5. **Comparison Table:** Completed comparison table (Designed vs. Calculated vs. Measured).
+5. **Comparison Table:** Designed vs. calculated (real parts) vs. measured values for frequency and duty cycle.
 6. **Short Analysis (3–4 sentences):** Why can a standard 2-resistor 555 astable circuit never achieve a duty cycle below 50%, and why is 60% achievable without adding an external bypass diode?
 
 ### Resources
@@ -415,126 +401,63 @@ Design a 555 astable multivibrator whose output has a **60% duty cycle**, build 
 ## Task 12: Prime Number Detector with a K-Map
 
 ### Objective
-Learn Karnaugh Maps (K-maps) from scratch by applying one to design a practical combinational logic circuit. By the end you should be able to:
-- Construct and fill a 4-variable K-map from a truth table.
-- Group adjacent minterms in valid powers of two (1, 2, 4, 8) and extract the simplified Boolean expression.
-- Explain the principle of Gray code adjacency: why adjacent cells differ in only one variable, causing that variable to eliminate.
-- Implement the simplified logic circuit using basic gates and verify it against all 16 input combinations.
+Learn Karnaugh maps from scratch by using one to design a real circuit. By the end you should be able to:
+- Fill a K-map from a truth table.
+- Circle valid groups (sizes 1, 2, 4, 8) and read an equation off them.
+- Explain why grouping works: two cells that touch differ in exactly one input, so that input drops out.
+- Build the result in logic gates and check it against every input combination.
 
 ### The Task
-Design and build a 4-input combinational logic circuit with inputs `D, C, B, A` representing a 4-bit binary number from 0 to 15 (`A` is the least significant bit, `D` is the most significant bit). The output LED turns ON if and only if the decimal value of the input is a **prime number**.
-- *Note: Treat 0 and 1 as non-prime. Prime numbers between 0 and 15 are: 2, 3, 5, 7, 11, 13.*
+Design and build a circuit with four inputs D C B A (a 4-bit number from 0 to 15, A is the least significant bit, D is the most significant bit). The output LED turns on when the number is prime. Treat 0 and 1 as not prime.
 
-Build and simulate the circuit in **Tinkercad Circuits** using 4 slide switches as inputs, an LED with a current-limiting resistor as output, and basic logic gates (AND, OR, NOT). No decoder or other "smart" ICs.
+Do this in Tinkercad Circuits using four slide switches as inputs, one LED as output, and plain gates (AND, OR, NOT) in between. No decoder or other "smart" ICs.
 
 ### Steps
-1. **Read First:** Review the K-map resources below to understand legal group sizes, grouping rules, and edge wrap-around adjacency.
-2. **Truth Table:** Write all 16 rows (0000 to 1111 in binary) and mark the output `Y = 1` for prime inputs and `Y = 0` for non-prime inputs. (Refer to the Truth Table below).
-3. **Unsimplified Baseline Circuit:** Write the canonical Sum of Products (SOP) expression (an AND term for each prime minterm, OR'd together), build it in Tinkercad using basic gates, and record the total gate count. This is your baseline.
-4. **Fill the K-Map:** Populate the 4-variable K-map shown below with your truth table values.
-5. **Group:** Identify the largest valid groups of 1s (remember that corners and opposite edges wrap around).
-6. **Derive Minimal SOP Equation:** Extract the simplified Boolean product term for each group and sum them together.
-7. **Build Simplified Circuit:** Construct the minimized logic circuit in Tinkercad and count the gates required.
-8. **Verify:** Test all 16 switch input combinations and verify that the output matches your truth table.
+1. **Read first:** Go through the K-map resources below until you can answer: what does it mean for two cells to "touch", and what are the legal group sizes?
+2. **Truth table:** Write all 16 rows and mark the output for each.
+3. **Raw circuit:** Write one AND term for every row where the output is 1, OR them together, and build it in Tinkercad. Count the gates. This is your baseline.
+4. **K-map:** Fill in the blank map below from your truth table (cell numbers are the decimal value of D C B A).
+5. **Group:** Circle groups of 1s. Use the largest groups you can, let groups overlap, and remember that the edges of the map wrap around (left touches right, top touches bottom).
+6. **Equation:** Write one product term per group and OR them.
+7. **Simplified circuit:** Build it in Tinkercad and count the gates.
+8. **Verify:** Run through all 16 switch combinations and confirm both circuits match your truth table. Write down your predicted output for 3 inputs before testing them.
 
----
-
-### Reference Tables & Templates
-
-#### 1. Blank 4-Variable K-Map Layout (Rows: DC, Columns: BA)
+#### Blank K-map (rows D C, columns B A)
 
 ```text
-+----------+--------+--------+--------+--------+
-| DC \ BA  |   00   |   01   |   11   |   10   |
-+----------+--------+--------+--------+--------+
-|    00    |    0   |    1   |    3   |    2   |
-+----------+--------+--------+--------+--------+
-|    01    |    4   |    5   |    7   |    6   |
-+----------+--------+--------+--------+--------+
-|    11    |   12   |   13   |   15   |   14   |
-+----------+--------+--------+--------+--------+
-|    10    |    8   |    9   |   11   |   10   |
-+----------+--------+--------+--------+--------+
++----------+----+----+----+----+
+| D C \ BA | 00 | 01 | 11 | 10 |
++----------+----+----+----+----+
+|    00    |  0 |  1 |  3 |  2 |
+|    01    |  4 |  5 |  7 |  6 |
+|    11    | 12 | 13 | 15 | 14 |
+|    10    |  8 |  9 | 11 | 10 |
++----------+----+----+----+----+
 ```
 
-*Note: Gray code ordering (`00, 01, 11, 10`) ensures that adjacent cells differ in only one bit.*
+| D C \ B A | 00 | 01 | 11 | 10 |
+| :---: | :---: | :---: | :---: | :---: |
+| **00** | 0 | 1 | 3 | 2 |
+| **01** | 4 | 5 | 7 | 6 |
+| **11** | 12 | 13 | 15 | 14 |
+| **10** | 8 | 9 | 11 | 10 |
 
----
-
-#### 2. Truth Table Reference (4-bit Prime Detector)
-
-```text
-+---------+---+---+---+---+-------------+------------+
-| Decimal | D | C | B | A |   Prime?    | Output (Y) |
-+---------+---+---+---+---+-------------+------------+
-|    0    | 0 | 0 | 0 | 0 |     No      |     0      |
-|    1    | 0 | 0 | 0 | 1 |     No      |     0      |
-|    2    | 0 | 0 | 1 | 0 | Yes (Prime) |     1      |
-|    3    | 0 | 0 | 1 | 1 | Yes (Prime) |     1      |
-|    4    | 0 | 1 | 0 | 0 |     No      |     0      |
-|    5    | 0 | 1 | 0 | 1 | Yes (Prime) |     1      |
-|    6    | 0 | 1 | 1 | 0 |     No      |     0      |
-|    7    | 0 | 1 | 1 | 1 | Yes (Prime) |     1      |
-|    8    | 1 | 0 | 0 | 0 |     No      |     0      |
-|    9    | 1 | 0 | 0 | 1 |     No      |     0      |
-|   10    | 1 | 0 | 1 | 0 |     No      |     0      |
-|   11    | 1 | 0 | 1 | 1 | Yes (Prime) |     1      |
-|   12    | 1 | 1 | 0 | 0 |     No      |     0      |
-|   13    | 1 | 1 | 0 | 1 | Yes (Prime) |     1      |
-|   14    | 1 | 1 | 1 | 0 |     No      |     0      |
-|   15    | 1 | 1 | 1 | 1 |     No      |     0      |
-+---------+---+---+---+---+-------------+------------+
-```
-
----
-
-#### 3. Verification / Prediction Table Template
-
-```text
-+-----------+------------------------+---------------+---------------------+---------------------+-------------+
-| Test Case | Switch Inputs (D C B A)| Decimal Value | Expected Output (Y) | Observed LED Status | Pass / Fail |
-+-----------+------------------------+---------------+---------------------+---------------------+-------------+
-|  Case 1   |        0 0 1 1         |       3       |      1 (LED ON)     |                     |             |
-|  Case 2   |        0 1 0 0         |       4       |      0 (LED OFF)    |                     |             |
-|  Case 3   |        0 1 1 1         |       7       |      1 (LED ON)     |                     |             |
-|  Case 4   |        1 0 0 1         |       9       |      0 (LED OFF)    |                     |             |
-|  Case 5   |        1 1 0 1         |      13       |      1 (LED ON)     |                     |             |
-+-----------+------------------------+---------------+---------------------+---------------------+-------------+
-```
-
----
-
-#### 4. Gate Count Comparison Template
-
-```text
-+-----------------------+-----------------------------+--------------------------+------------+
-|  Component / Metric   | Baseline (Canonical SOP)    | Simplified (K-Map SOP)   | Difference |
-+-----------------------+-----------------------------+--------------------------+------------+
-| NOT Gates (Inverters) |                             |                          |            |
-| AND Gates             |                             |                          |            |
-| OR Gates              |                             |                          |            |
-+-----------------------+-----------------------------+--------------------------+------------+
-| Total Gate Count      |                             |                          |            |
-| Total IC Count        |                             |                          |            |
-+-----------------------+-----------------------------+--------------------------+------------+
-```
-
----
+*Axis order is 00, 01, 11, 10 on purpose, so that neighbouring cells always differ in only one input. Use it as given.*
 
 ### Deliverables
-1. **Tinkercad Link:** Public share link to your simulated Tinkercad circuit containing both the raw baseline and simplified circuits.
-2. **Design Worksheet:** Image/scan showing the truth table, populated K-map with circled groups, and final simplified equation.
-3. **Verification Table:** A completed verification table recording inputs, predicted output, and observed output for test cases.
-4. **Gate Count Comparison:** Comparison of gate and IC count: Unsimplified vs. Simplified.
-5. **Conceptual Explanation (3–4 sentences):** Why does grouping adjacent cells in a K-map allow a variable to be eliminated?
+1. Tinkercad share link (viewable by anyone with the link) containing both the raw and the simplified circuit, labeled.
+2. One sheet (photo or scan is fine) with the truth table, the filled K-map with groups circled, and your final equation.
+3. Prediction table: 3 inputs, your predicted output, and the actual output.
+4. Gate counts: raw circuit vs. simplified circuit.
+5. Short answer (3 to 4 sentences): why can two touching cells be merged into one term?
 
 ### Resources
-- [Neso Academy — Karnaugh Map Playlist (YouTube)](https://www.youtube.com/playlist?list=PLBlnK6fEyqRiLCE18N9RN8ymscpMaGCfk)
-- [Karnaugh Maps with 4 Variables (YouTube)](https://www.youtube.com/watch?v=YJSqf_Z024w)
-- [Simulating Logic Gates in Tinkercad Circuits (YouTube)](https://www.youtube.com/watch?v=ZIMcNXUzTkA)
-- [Digital Electronics: Logic Gates Circuits on Tinkercad (YouTube)](https://www.youtube.com/playlist?list=PLI3bPjdny_5F5Ma16wtAC81AtzwtDB7-8)
-- [All About Circuits — Karnaugh Mapping Worksheet](https://www.allaboutcircuits.com/worksheets/karnaugh-mapping/)
-- [Tinkercad Circuits Simulator](https://www.tinkercad.com/circuits)
+- [Karnaugh map playlist (YouTube)](https://www.youtube.com/playlist?list=PLBlnK6fEyqRiLCE18N9RN8ymscpMaGCfk) — The main K-map course. Cover the introduction and the 4-variable videos (grouping and wrap-around) before starting the task.
+- [Karnaugh Maps with 4 Variables (YouTube)](https://www.youtube.com/watch?v=YJSqf_Z024w) — A second explanation of the same material, useful if the playlist doesn’t click.
+- [Logic Gates in Tinkercad (YouTube)](https://www.youtube.com/watch?v=ZIMcNXUzTkA) — Placing gates, switches and LEDs and running the simulation.
+- [Digital Electronics: Logic Gates Circuits on Tinkercad (YouTube)](https://www.youtube.com/playlist?list=PLI3bPjdny_5F5Ma16wtAC81AtzwtDB7-8) — More Tinkercad gate builds if you get stuck wiring.
+- [Karnaugh Mapping worksheet (All About Circuits)](https://www.allaboutcircuits.com/worksheets/karnaugh-mapping/) — Practice questions to try before you start the task.
+- [Tinkercad Circuits](https://www.tinkercad.com/circuits)
 
 ---
 
