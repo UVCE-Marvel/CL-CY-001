@@ -361,32 +361,46 @@ Through this task, you will explore these differences by building and testing th
 
 ### Objective
 Design, build, and measure a 555 astable multivibrator. By the end you should be able to:
-- Choose the timing resistors ($R_1, R_2$) and capacitor ($C$) for a target frequency and duty cycle.
+- Choose timing resistors (R1, R2) and capacitor (C) for a target frequency and duty cycle.
 - Wire the NE555 timer IC as an astable oscillator on a breadboard.
-- Measure frequency, period, high time ($t_{high}$), low time ($t_{low}$), and duty cycle on a Digital Storage Oscilloscope (DSO).
+- Measure frequency, period, high time (t_high), low time (t_low), and duty cycle on a Digital Storage Oscilloscope (DSO).
 - Explain any discrepancies between theoretical designed values and actual measured values.
 
 ### The Task
 Design a 555 astable multivibrator whose output has a **60% duty cycle**, build it on a breadboard, and observe the output waveform on a DSO.
 
-- **Target Frequency:** Pick $1\text{ kHz}$ so the waveform is clear and easy to analyze on the scope.
+- **Target Frequency:** Pick 1 kHz so the waveform is clear and easy to analyze on the scope.
 
 ### Steps
-1. **Read First:** Go through the resources below until you can write the astable formulas for frequency and duty cycle in terms of $R_1, R_2$, and $C$, and explain what charges and discharges the capacitor in each half of the cycle.
-2. **Design on Paper:** From the target frequency ($1\text{ kHz}$) and $60\%$ duty cycle, derive the ratio of $R_1$ to $R_2$, choose a standard capacitor value $C$, and compute $R_1$ and $R_2$. Show all calculation steps.
+1. **Read First:** Go through the resources below until you can write the astable formulas for frequency and duty cycle in terms of R1, R2, and C, and explain what charges and discharges the capacitor in each half of the cycle.
+2. **Design on Paper:** From the target frequency (1 kHz) and 60% duty cycle, derive the ratio of R1 to R2, choose a standard capacitor value C, and compute R1 and R2. Show all calculation steps.
 3. **Pick Real Parts:** Round your calculated resistor values to standard component values available in the lab and recompute the exact theoretical frequency and duty cycle.
-4. **Build:** Wire the NE555 on a breadboard with a 5V to 12V DC supply, your components $R_1, R_2, C$, and a $10\text{ nF}$ decoupling capacitor from Pin 5 (Control Voltage) to Ground. Check the datasheet pinout before powering on.
+4. **Build:** Wire the NE555 on a breadboard with a 5V to 12V DC supply, your components R1, R2, C, and a 10 nF decoupling capacitor from Pin 5 (Control Voltage) to Ground. Check the datasheet pinout before powering on.
 5. **Probe:** Connect the DSO probe to Pin 3 (Output) and Ground. Adjust the timebase so that 2 to 3 full waveform cycles are visible, and verify that probe attenuation (1x/10x) matches the scope channel settings.
-6. **Measure:** Record the period, frequency, high time ($t_{high}$), and low time ($t_{low}$), and compute the measured duty cycle using the DSO's cursor or automatic measurement tools.
+6. **Measure:** Record the period, frequency, high time (t_high), and low time (t_low), and compute the measured duty cycle using the DSO's cursor or automatic measurement tools.
 7. **Compare:** Tabulate designed vs. calculated-with-real-parts vs. measured values, and explain any differences (component tolerances, internal transistor drops, parasitic breadboard capacitance).
 
+### Comparison Table Template
+
+```text
++--------------------+---------------------------------------+----------------+-------------------------+----------------+---------+
+|     Parameter      |                Formula                | Designed Value | Calculated (Real Parts) | Measured (DSO) | % Error |
++--------------------+---------------------------------------+----------------+-------------------------+----------------+---------+
+| Frequency (f)      | f = 1.44 / ((R1 + 2*R2) * C)          | 1 kHz          |                         |                |         |
+| Duty Cycle (D)     | D = ((R1 + R2) / (R1 + 2*R2)) * 100%  | 60%            |                         |                |         |
+| High Time (t_high) | t_high = 0.693 * (R1 + R2) * C        | 0.60 ms        |                         |                |         |
+| Low Time (t_low)   | t_low = 0.693 * R2 * C                | 0.40 ms        |                         |                |         |
+| Period (T)         | T = t_high + t_low                    | 1.00 ms        |                         |                |         |
++--------------------+---------------------------------------+----------------+-------------------------+----------------+---------+
+```
+
 ### Deliverables
-1. **Design Sheet:** Calculations showing the derived $R_1/R_2$ ratio, chosen capacitor value, calculated resistor values, and recalculated metrics for real parts.
+1. **Design Sheet:** Calculations showing the derived R1/R2 ratio, chosen capacitor value, calculated resistor values, and recalculated metrics for real parts.
 2. **Circuit Schematic:** Labeled diagram with pin numbers and component values.
 3. **Breadboard Photo:** High-resolution image of the wired circuit with DSO probe connected.
 4. **DSO Screenshot/Photo:** Waveform showing at least 2 full periods with measured frequency and duty cycle parameters visible.
-5. **Comparison Table:** Designed vs. Calculated vs. Measured values.
-6. **Short Analysis (3–4 sentences):** Why can a standard 2-resistor 555 astable circuit never achieve a duty cycle below $50\%$, and why is $60\%$ achievable without adding an external bypass diode?
+5. **Comparison Table:** Completed comparison table (Designed vs. Calculated vs. Measured).
+6. **Short Analysis (3–4 sentences):** Why can a standard 2-resistor 555 astable circuit never achieve a duty cycle below 50%, and why is 60% achievable without adding an external bypass diode?
 
 ### Resources
 - [555 Timer Math — Derivation & Equations](https://www.mathscinotes.com/2014/04/555-timer-math/)
@@ -403,41 +417,114 @@ Design a 555 astable multivibrator whose output has a **60% duty cycle**, build 
 ### Objective
 Learn Karnaugh Maps (K-maps) from scratch by applying one to design a practical combinational logic circuit. By the end you should be able to:
 - Construct and fill a 4-variable K-map from a truth table.
-- Group adjacent minterms in valid powers of two ($1, 2, 4, 8$) and extract the simplified Boolean expression.
+- Group adjacent minterms in valid powers of two (1, 2, 4, 8) and extract the simplified Boolean expression.
 - Explain the principle of Gray code adjacency: why adjacent cells differ in only one variable, causing that variable to eliminate.
 - Implement the simplified logic circuit using basic gates and verify it against all 16 input combinations.
 
 ### The Task
-Design and build a 4-input combinational logic circuit with inputs $D, C, B, A$ representing a 4-bit binary number from $0$ to $15$ ($A$ is the least significant bit, $D$ is the most significant bit). The output LED turns ON if and only if the decimal value of the input is a **prime number**.
-- *Note: Treat $0$ and $1$ as non-prime. Prime numbers between $0$ and $15$ are: $2, 3, 5, 7, 11, 13$.*
+Design and build a 4-input combinational logic circuit with inputs `D, C, B, A` representing a 4-bit binary number from 0 to 15 (`A` is the least significant bit, `D` is the most significant bit). The output LED turns ON if and only if the decimal value of the input is a **prime number**.
+- *Note: Treat 0 and 1 as non-prime. Prime numbers between 0 and 15 are: 2, 3, 5, 7, 11, 13.*
 
-Build and simulate the circuit in **Tinkercad Circuits** using 4 slide switches as inputs, an LED with a current-limiting resistor as output, and basic logic gates (AND, OR, NOT).
+Build and simulate the circuit in **Tinkercad Circuits** using 4 slide switches as inputs, an LED with a current-limiting resistor as output, and basic logic gates (AND, OR, NOT). No decoder or other "smart" ICs.
 
 ### Steps
 1. **Read First:** Review the K-map resources below to understand legal group sizes, grouping rules, and edge wrap-around adjacency.
-2. **Truth Table:** Write all 16 rows ($0000_2$ to $1111_2$) and mark the output $Y = 1$ for prime inputs and $Y = 0$ for non-prime inputs.
-3. **Unsimplified Baseline Circuit:** Write the canonical Sum of Products (SOP) expression, build it in Tinkercad using basic gates, and record the total gate count.
+2. **Truth Table:** Write all 16 rows (0000 to 1111 in binary) and mark the output `Y = 1` for prime inputs and `Y = 0` for non-prime inputs. (Refer to the Truth Table below).
+3. **Unsimplified Baseline Circuit:** Write the canonical Sum of Products (SOP) expression (an AND term for each prime minterm, OR'd together), build it in Tinkercad using basic gates, and record the total gate count. This is your baseline.
 4. **Fill the K-Map:** Populate the 4-variable K-map shown below with your truth table values.
 5. **Group:** Identify the largest valid groups of 1s (remember that corners and opposite edges wrap around).
 6. **Derive Minimal SOP Equation:** Extract the simplified Boolean product term for each group and sum them together.
 7. **Build Simplified Circuit:** Construct the minimized logic circuit in Tinkercad and count the gates required.
 8. **Verify:** Test all 16 switch input combinations and verify that the output matches your truth table.
 
-#### 4-Variable K-Map Layout (Rows: $D\ C$, Columns: $B\ A$)
+---
 
-| $D\ C$ \ $B\ A$ | 00 | 01 | 11 | 10 |
-| :---: | :---: | :---: | :---: | :---: |
-| **00** | $0$ | $1$ | $3$ | $2$ |
-| **01** | $4$ | $5$ | $7$ | $6$ |
-| **11** | $12$ | $13$ | $15$ | $14$ |
-| **10** | $8$ | $9$ | $11$ | $10$ |
+### Reference Tables & Templates
 
-*Note: Gray code ordering ($00, 01, 11, 10$) ensures that only one bit changes between adjacent rows and columns.*
+#### 1. Blank 4-Variable K-Map Layout (Rows: DC, Columns: BA)
+
+```text
++----------+--------+--------+--------+--------+
+| DC \ BA  |   00   |   01   |   11   |   10   |
++----------+--------+--------+--------+--------+
+|    00    |    0   |    1   |    3   |    2   |
++----------+--------+--------+--------+--------+
+|    01    |    4   |    5   |    7   |    6   |
++----------+--------+--------+--------+--------+
+|    11    |   12   |   13   |   15   |   14   |
++----------+--------+--------+--------+--------+
+|    10    |    8   |    9   |   11   |   10   |
++----------+--------+--------+--------+--------+
+```
+
+*Note: Gray code ordering (`00, 01, 11, 10`) ensures that adjacent cells differ in only one bit.*
+
+---
+
+#### 2. Truth Table Reference (4-bit Prime Detector)
+
+```text
++---------+---+---+---+---+-------------+------------+
+| Decimal | D | C | B | A |   Prime?    | Output (Y) |
++---------+---+---+---+---+-------------+------------+
+|    0    | 0 | 0 | 0 | 0 |     No      |     0      |
+|    1    | 0 | 0 | 0 | 1 |     No      |     0      |
+|    2    | 0 | 0 | 1 | 0 | Yes (Prime) |     1      |
+|    3    | 0 | 0 | 1 | 1 | Yes (Prime) |     1      |
+|    4    | 0 | 1 | 0 | 0 |     No      |     0      |
+|    5    | 0 | 1 | 0 | 1 | Yes (Prime) |     1      |
+|    6    | 0 | 1 | 1 | 0 |     No      |     0      |
+|    7    | 0 | 1 | 1 | 1 | Yes (Prime) |     1      |
+|    8    | 1 | 0 | 0 | 0 |     No      |     0      |
+|    9    | 1 | 0 | 0 | 1 |     No      |     0      |
+|   10    | 1 | 0 | 1 | 0 |     No      |     0      |
+|   11    | 1 | 0 | 1 | 1 | Yes (Prime) |     1      |
+|   12    | 1 | 1 | 0 | 0 |     No      |     0      |
+|   13    | 1 | 1 | 0 | 1 | Yes (Prime) |     1      |
+|   14    | 1 | 1 | 1 | 0 |     No      |     0      |
+|   15    | 1 | 1 | 1 | 1 |     No      |     0      |
++---------+---+---+---+---+-------------+------------+
+```
+
+---
+
+#### 3. Verification / Prediction Table Template
+
+```text
++-----------+------------------------+---------------+---------------------+---------------------+-------------+
+| Test Case | Switch Inputs (D C B A)| Decimal Value | Expected Output (Y) | Observed LED Status | Pass / Fail |
++-----------+------------------------+---------------+---------------------+---------------------+-------------+
+|  Case 1   |        0 0 1 1         |       3       |      1 (LED ON)     |                     |             |
+|  Case 2   |        0 1 0 0         |       4       |      0 (LED OFF)    |                     |             |
+|  Case 3   |        0 1 1 1         |       7       |      1 (LED ON)     |                     |             |
+|  Case 4   |        1 0 0 1         |       9       |      0 (LED OFF)    |                     |             |
+|  Case 5   |        1 1 0 1         |      13       |      1 (LED ON)     |                     |             |
++-----------+------------------------+---------------+---------------------+---------------------+-------------+
+```
+
+---
+
+#### 4. Gate Count Comparison Template
+
+```text
++-----------------------+-----------------------------+--------------------------+------------+
+|  Component / Metric   | Baseline (Canonical SOP)    | Simplified (K-Map SOP)   | Difference |
++-----------------------+-----------------------------+--------------------------+------------+
+| NOT Gates (Inverters) |                             |                          |            |
+| AND Gates             |                             |                          |            |
+| OR Gates              |                             |                          |            |
++-----------------------+-----------------------------+--------------------------+------------+
+| Total Gate Count      |                             |                          |            |
+| Total IC Count        |                             |                          |            |
++-----------------------+-----------------------------+--------------------------+------------+
+```
+
+---
 
 ### Deliverables
 1. **Tinkercad Link:** Public share link to your simulated Tinkercad circuit containing both the raw baseline and simplified circuits.
 2. **Design Worksheet:** Image/scan showing the truth table, populated K-map with circled groups, and final simplified equation.
-3. **Verification Table:** A table recording inputs, predicted output, and observed output for test cases.
+3. **Verification Table:** A completed verification table recording inputs, predicted output, and observed output for test cases.
 4. **Gate Count Comparison:** Comparison of gate and IC count: Unsimplified vs. Simplified.
 5. **Conceptual Explanation (3–4 sentences):** Why does grouping adjacent cells in a K-map allow a variable to be eliminated?
 
