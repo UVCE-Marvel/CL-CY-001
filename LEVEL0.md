@@ -1,241 +1,485 @@
 # Generic Tasks
 
-## TASK 1: 3D Printing
+## Task 1: Print It Yourself
 
-Understand the working of a 3D printer, check out the online resources. Understand what's an
-STL file, and then learn to slice it (using ultimaker or creality slicer).Go through the SOP'S regarding the 3d printer. Learn about bed
-temperature, infill density and other printer settings. Finally get an STL file from the internet, and
-slice it and put it for print.
+**Design a Simple Part and 3D Print It**
 
-Resources:
+First learn how a 3D printer works. Then design your own simple parts, a cube and a cylinder, in Onshape. It runs in your browser, so there is nothing to install. No CAD experience needed, so students from any branch can do it. After that, slice your design and print it.
 
-- [Introduction to 3d printer](https://www.youtube.com/watch?v=kM5zRO3n9-Y)
+**Objective:** Understand the full process of 3D printing: design, STL file generation, slicing, and printing.
 
-- [PLA settings](https://standardprintco.com/read/pla-filament-printing-guide-how-to-succeed-printing-pla-and-troubleshooting-common-problems-step-by-step)
+### What to do
+1. Watch the intro video on 3D printers and read the PLA settings guide.
+2. Go through the 3D printer SOPs.
+3. Make an Onshape account with your college email.
+4. Read the Onshape resource article. Design a cube (30 mm sides) and a cylinder (30 mm diameter, 30 mm height) as two separate parts.
+5. Export them as an STL file in millimeters.
+6. Slice the STL in Bambu Studio. Note down the bed temperature and infill density.
+7. Print it with a coordinator present.
 
-- [Types of 3D printing](https://formlabs.com/asia/blog/fdm-vs-sla-vs-sls-how-to-choose-the-right-3d-printing-technology/)
+### Learning Resources
+- [Introduction to 3D Printer](https://www.youtube.com/watch?v=kM5zRO3n9-Y) — How a 3D printer works.
+- [PLA Printing Guide](https://standardprintco.com/read/pla-filament-printing-guide-how-to-succeed-printing-pla-and-troubleshooting-common-problems-step-by-step) — Bed temperature, infill, and other PLA settings.
+- [Types of 3D Printing](https://formlabs.com/asia/blog/fdm-vs-sla-vs-sls-how-to-choose-the-right-3d-printing-technology/) — FDM vs SLA vs SLS.
+- [Designing a Simple Part in Onshape for 3D Printing](https://hub.uvcemarvel.in/article/52f92f36-fb8a-45da-8f28-686bf4efefff) — Refer to the Resource Article.
 
-(Note this task is to be done under coordinator supervision.)
-![3dprinter](https://gist.github.com/user-attachments/assets/6339d1a8-82d4-4631-8fd6-af7d77de983f)
+### Suggested Focus
+Read the Onshape article first, then start designing. Type `mm` after every number. Keep the cube and cylinder as separate parts. Check that the STL is in millimeters before slicing.
 
+> **Note:** 3D printing must be done only under coordinator supervision.
 
-## TASK 2: API
+---
 
-What is an API? [Learn](https://www.youtube.com/watch?v=s7wmiS2mSXY) the working of an API and its applications. Using any api of your choice,
-build an user interface(web app, mobile app, etc), where you can make calls and then display
-the necessary information. An example weather app is given below, using the open weather api.
+## Task 2: Dynamic Portfolio & Admin Dashboard
 
-- [Example](https://www.youtube.com/watch?v=HAVPicZJ9ik&feature=youtu.be)
+### Task Description
+Design and develop a dynamic personal portfolio website along with an administrative dashboard that allows the portfolio owner to manage website content through a graphical interface without modifying the source code.
 
+The application should consist of two integrated interfaces:
+1. **Public Portfolio Website:** Showcases the student's profile, skills, projects, and achievements.
+2. **Admin Dashboard:** Allows the owner to manage and update portfolio content dynamically.
 
-## TASK 3: Working with Github
+### Requirements
 
-Familiarize yourself with GitHub integrated workflows (GitHub actions), Issues, and pull requests
-with this task. Given below is a git repository, go check it out and then perform the necessary
-tasks stated in the readme file.
+#### 1. Public Portfolio
+- Develop a responsive website displaying the student's profile, skills, projects, and achievements.
+- Retrieve and display portfolio content dynamically through an API.
+- Ensure that changes made through the admin dashboard are reflected on the public portfolio.
 
-Check this link for more info:
-https://github.com/UVCE-Marvel/git-task
+#### 2. Admin Dashboard
+- Create a user-friendly administrative interface for managing portfolio content.
+- Implement functionality to add, view, update, and delete projects and skills using forms and controls.
+- Ensure that content management does not require direct modification of the source code.
 
+#### 3. REST API Development
+- Develop and integrate a RESTful API to facilitate communication between the admin dashboard, backend, and public portfolio.
+- Implement appropriate API endpoints and HTTP methods (GET, POST, PUT/PATCH, DELETE) for portfolio content.
+- Exchange data using JSON and implement basic input validation and error handling.
 
-## TASK 4: Command Line on Ubuntu
-- Create a folder named test.
+#### 4. Data Management
+- Store and manage portfolio content using an appropriate in-memory data structure, JSON file, or another beginner-friendly mechanism.
+- Ensure that both the public portfolio and admin dashboard access the same application data.
+- Database integration is optional.
 
-- cd into that folder.
+#### 5. Deployment and Documentation
+- Deploy the application using suitable hosting platforms (e.g., Vercel, Netlify, Render, GitHub Pages).
+- Maintain the source code in a GitHub repository.
+- Document the application architecture, API endpoints, setup instructions, and known limitations in a `README.md` file.
 
-- Create a blank file without using any text editor.
+### Expected Outcomes
+- Understand the development of dynamic and responsive web applications.
+- Learn the fundamentals of REST APIs, HTTP methods, and JSON.
+- Understand CRUD operations and client-server communication.
+- Gain experience integrating frontend interfaces with an API.
+- Develop skills in application deployment, documentation, and error handling.
 
-- list the files in that folder
+### Suggested Technologies
+HTML, CSS, JavaScript, and any suitable backend framework of your choice (Node.js/Express, Python/Flask/FastAPI, etc.).
 
-- create 2600 folders in this folder where each folder is named like . For example, M90 or
-B56.
+### Submission Requirements
+1. Public portfolio website URL
+2. Admin dashboard URL or route
+3. GitHub repository link
+4. `README.md` documentation
+5. Screenshots demonstrating content management and dynamic updates
 
-- concatenate two text files containing any random text and display them on the terminal.
+### Resources
+- [MDN — Getting Started with Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started)
+- [Postman Quick Start Guide](https://learning.postman.com/docs/getting-started/quick-start/)
+- [MDN — Making Network Requests with JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Network_requests)
 
-https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
+---
 
-## Task 5 : *Build Your Own Brain* -Linear Regression from Scratch
+## Task 3: Working with GitHub
 
-Dive into the core of machine learning by implementing **Linear Regression from scratch** using , and compare its performance with the **scikit-learn implementation**. Use the **California Housing dataset** to evaluate your model on real-world data.
-<br>
-### Your Task:
-- Implement linear regression manually (without using ML libraries for training).
-- Understand and apply gradient descent to minimize error.
-- Compare your custom model’s performance against `sklearn.linear_model.LinearRegression` .
-- You should analyze results by:
-	 * Graph showing line of best fit and the datapoints.
-	 * Performance metrics: MSE, MAE, R² for both custom and scikit-learn models.
-	 * Brief comparison between two models.
-<br>
-[Download Dataset](https://www.kaggle.com/datasets/camnugent/california-housing-prices)
+Familiarize yourself with real-world Git and GitHub workflows including Issues, Branching, Resolving Merge Conflicts, Pull Requests, and GitHub Actions (CI/CD).
+
+Given below is the task repository. Follow the instructions in its `README.md` to generate your username-specific assignment, document the bugs you find in a GitHub Issue, fix them on a new branch, resolve the practice merge conflict, and open a Pull Request.
 
-### Learn Linear Regression:
-1. Understanding :
-     - [Linear Regression](https://www.geeksforgeeks.org/ml-linear-regression/)
-     -  [Gradient Descent](https://youtu.be/sDv4f4s2SB8?feature=shared)
+### What to include in your task report:
+1. The output of `python my_task.py <your-github-username>` showing your assigned functions.
+2. A link to the GitHub Issue you opened and a brief explanation of the bugs you fixed.
+3. A link to your Pull Request showing the passing GitHub Actions check.
+   - *Note: PRs are verified by CI and left open for review — they do not need to be merged.*
+
+**Repository Link:** [https://github.com/UVCE-Marvel/git-task](https://github.com/UVCE-Marvel/git-task)
+
+---
+
+## Task 4: Hack the Hardware — Ubuntu Command Line & Systems Architecture
+
+### Objective
+**Ubuntu Command Line: Systems Computing, Architecture & Linux**
+
+### Core Intention
+To move beyond rote command memorization and cultivate a deep, foundational understanding of computing systems, the Linux operating system, and system-level problem-solving. Students learn *how* and *why* their terminal commands navigate the software stack — from high-level shell calls down to execution units in hardware.
 
-2. Coding the linear regression algorithm from scratch:
-- https://towardsdatascience.com/coding-linear-regression-from-scratch-c42ec079902
-- https://www.askpython.com/python/examples/linear-regression-from-scratch
-- https://medium.com/data-science/linear-regression-using-gradient-descent-97a6c8700931
+### 1. Hardware Foundation & Architecture: "The 'U' in CPU"
 
-### Expected Outcomes:
+#### Topics & Concepts
+- **The Anatomy of the CPU:** The Control Unit (CU), Arithmetic Logic Unit (ALU), internal registers (A, D, Program Counter PC), and bus connections.
+- **The Fetch-Decode-Execute Cycle:** How machine instructions are fetched from memory, decoded by control logic, executed inside the ALU, and written back to registers/RAM.
+- **Hardware Abstraction:** How shell instructions translate through compiler/assembler pipelines into binary micro-operations that flip physical logic gates.
 
-- Grasp how gradient descent optimizes weights in linear regression.
-- Understand the importance of feature scaling.
-- Know how to evaluate regression models using standard metrics.
-- Be able to appreciate the convenience and performance of inbuilt ML libraries.
+#### Why You Need This
+Understanding hardware abstraction stops you from treating the terminal as a black box. Knowing how registers, memory addresses, and execution cycles work allows you to diagnose performance bottlenecks, manage low-level system resources, write efficient code, and program embedded microcontrollers or microprocessors effectively.
 
-### Precautions:
+#### How to Study This Topic
+1. **Nand2Tetris Unit 4 (Machine Language):** Write assembly programs for the Hack computer (`Mult.asm` and `Fill.asm`) to manually track register states (A, D, M), instruction decoding, and memory-mapped I/O (Screen and Keyboard).
+2. **Trace Hardware Metrics via Terminal:** Use terminal utilities like `lscpu`, `lsscsi`, and `cat /proc/cpuinfo` to map abstract CPU concepts (cores, threads, cache sizes, architecture flags) to physical host hardware.
 
-- Always normalize or standardize features before training your scratch model, especially if you’re using gradient descent.
-- Be cautious with your **learning rate** , too small and the model is slow, too large and it may diverge.
-- Initialize weights and bias properly ( small random values or zeros).
+### 2. Operating Systems, Kernels, and Linux Distributions
 
-## Task 6 : The Matrix Puzzle — Decode with NumPy & Reveal the Image
+#### Topics & Concepts
+- **The Operating System's Core Role:** Memory virtualization, process scheduling, storage management, and hardware safety.
+- **What is a Kernel?** The privileged (Ring 0) bridge between user space applications and physical hardware via System Calls (syscalls).
+- **Linux Distributions vs. The Kernel:** Distinguishing between the upstream Linux kernel and distributions (Ubuntu, Debian, Fedora, Arch) that package userland tools, package managers, and display servers.
 
-Get hands-on with NumPy and Matplotlib by solving a visual puzzle. You’ll be given a scrambled matrix, and your mission is to decode it into a hidden image using NumPy operations and visualization techniques.
+#### Why You Need This
+When an application or script crashes, hangs, or fails to start, the issue usually lies in kernel-level resource access, missing dependencies, or system call errors. Understanding OS mechanics enables you to debug real-world server, embedded Linux, and edge-computing environments.
 
-### Your Task:
-* Download the scrambled matrix from the link provided.
-* Use your knowledge of NumPy to manipulate, reshape, and reorient the matrix.
-* Reveal the secret image by plotting it using `matplotlib.pyplot.imshow()` .
-* Scrambled Matrix: [Download Here](https://drive.google.com/file/d/1JV26iyjRkuNCYu-QuDKz9CLV40Ib873W/view?usp=drive_link)
-* NumPy Learning Doc: [Explore Here](https://colab.research.google.com/drive/1WHwChJ-8PO8sPuY0NM-5UpHP98Fjj5bA?usp=sharing)
+#### How to Study This Topic
+1. **System Call Observation:** Run simple terminal commands through `strace` (e.g., `strace ls`) to observe how userland utilities request kernel services (e.g., `openat`, `read`, `write`).
+2. **Virtual Filesystem Exploration:** Navigate `/proc` and `/sys` to understand how the Linux kernel exposes running system states directly as text files.
 
-### Learn NUMPY:
+### 3. The Linux Environment & Core System Concepts
 
-* https://youtu.be/QUT1VHiLmmI?feature=shared
-* https://www.w3schools.com/python/numpy/default.asp
-* https://www.datacamp.com/tutorial/python-numpy-tutorial
-* [Official Documentation](https://numpy.org/doc/2.2/)
+#### Topics & Concepts
+- **Terminal vs. Shell:** Distinguishing between terminal emulators (user interface) and shells (`bash`, `zsh` — command interpreters).
+- **Filesystem Hierarchy Standard (FHS):** Root (`/`), user space (`~`), device files (`/dev`), configuration files (`/etc`), and system binaries (`/bin`, `/usr/bin`).
+- **Permissions & Security Model:** Read, write, execute (`rwx`) flags, file ownership (`user:group`), and privilege escalation (`sudo`).
+- **Processes & Signals:** Process IDs (PIDs), job control (`&`, `fg`, `bg`), environment variables, standard streams (`stdin`, `stdout`, `stderr`), and piping (`|`).
 
-### Learn Matplotlib:
+#### Why You Need This
+The command line is the primary interface for remote servers, cloud infrastructure, robotics platforms (like ROS 2), and build environments. Mastering streams, permissions, and process controls lets you automate complex workflows and manage systems without relying on a graphical user interface.
 
-* [Official Documentation](https://matplotlib.org/stable/index.html)
-* https://www.datacamp.com/tutorial/matplotlib-tutorial-python
-* https://youtu.be/3Xc3CA655Y4?feature=shared
+#### How to Study This Topic
+1. **Interactive Terminal Scenarios:** Solve practical system issues (e.g., permission-denied errors, locating run-away processes with `top` or `ps aux`, killing stuck tasks via signals).
+2. **Pipe Construction:** Practice stringing fundamental tools (`grep`, `awk`, `sed`, `cut`, `sort`) together to parse logs and extract target metrics.
 
-Decode the Matrix using these clues and Visualize it :
-* `"Try reshaping the encoded array into a square—how many elements are there?"`
-* `"The structure may be upright, but the data might be sideways. Look at its orientation."`
-* `"Sometimes the end is actually the beginning."`
+### 4. Practical Tips for Terminal Execution
+- **Read the Manual (`man`):** Never guess command flags. Run `man <command>` (or use `tldr <command>`) to inspect flags and syntax.
+- **Inspect Exit Codes:** Check `$?` immediately after running a command to see if it succeeded (`0`) or threw an error (non-zero).
+- **Fail Fast & Safely:** Use `ls` or `echo` to verify wildcard patterns (e.g., `echo *.log`) before executing destructive commands like `rm *.log`.
+- **Understand Standard Streams:** Treat `stdout` (1) and `stderr` (2) separately so you don't miss error messages when redirecting logs.
+- **Leverage Autocompletion & History:** Use Tab key completion to avoid typos and Ctrl + R to search previous command history quickly.
 
-### Expected Outcomes:
-- Gain confidence with NumPy operations like reshaping, slicing, flipping, and transposing.
-- Learn to visualize 2D arrays using Matplotlib.
-- Sharpen your debugging and puzzle-solving skills in a fun context.
+### 5. Hands-on Problem Statement: System Audit & Log Processing Pipeline
+You are tasked with inspecting a remote Linux workstation that has experienced intermittent slowdowns. Without using any Graphical User Interface (GUI), complete the following steps using terminal utilities:
 
-### Precautions:
-- Check the shape of the array before applying `imshow()` - wrong dimensions will throw errors.
-- Ensure that your reshaped matrix has the correct number of elements (it's likely a square!).
+1. **Hardware & Kernel Inspection:**
+   - Identify the total number of physical CPU cores, architecture model, and the running Linux kernel version. Output these values into a file named `system_summary.txt`.
+2. **Process & Resource Triage:**
+   - Locate all running processes consuming memory on the system. Filter out system daemons to find the process ID (PID) of the process running under your user space, and write the output to `process_audit.log`.
+3. **Permission & File System Reorganization:**
+   - Create a secure directory structure under `~/workspace/audit_logs/`.
+   - Change the directory permissions so that only your user has read, write, and execute permissions (`700`). Move all generated log files into this directory.
+4. **Log Data Parsing & Filtering:**
+   - Given a system log file containing mixed informational and error entries, write a single-line command pipeline using `cat`, `grep`, `awk`, and `sort` to extract only unique `[ERROR]` messages and count their occurrences.
 
+### 6. What You Must Build
+To successfully complete this task, you must build and deliver:
+1. **Draw Your Own Architecture:**
+   - Draw how you think the CPU used to look before going through it and how it looks now according to you. Wrong answers welcomed — we want to see your conceptual understanding.
+2. **Custom Automated Shell Script (`system_health.sh`):**
+   - A bash script that gathers system uptime, CPU core count, active memory usage from `/proc/meminfo`, and active user processes, formatting them into a readable text report.
+3. **Execution & Analysis Log Notebook:**
+   - A written document explaining:
+     - The step-by-step resolution of the **Problem Statement**.
+     - Annotations of key `strace` outputs showing at least two system calls (`openat`, `write`).
+     - Explanations for why specific piping choices (`|`) were used during log extraction.
 
-## TASK 7: Create a Portfolio Webpage
+### 7. Foundational Command-Line Exercises
+- **Navigation & Inspection:** `pwd`, `cd`, `ls -la`, `tree`
+- **File & Directory Operations:** `touch`, `mkdir -p`, `cp -r`, `mv`, `rm -rf`
+- **Content Viewing & Inspection:** `cat`, `less`, `head`, `tail -f`, `echo`, `grep`
 
-Create a website to showcase your portfolio - about yourself, interests, projects, social media
-profiles and more. It has to be responsive and also pushed to the git repository. CSS can be of
-your choice and any framework can be used.
+### 8. Resource Links
 
+#### Computer Architecture & Nand2Tetris
+- [Nand2Tetris Official Course & Software Suite](https://www.nand2tetris.org/software) — Hands-on building of a computer system from basic NAND logic gates up to an Operating System.
+- [Nand2Tetris Unit 4 (Machine Language)](https://www.nand2tetris.org/project04) — Covers Hack assembly programming, register operations (A, D, M), pointer manipulation, and memory-mapped I/O.
+- [Nand2Tetris Chapter 5 (Computer Architecture)](https://www.nand2tetris.org/) — Focuses on building the Hack CPU, instruction decoding logic, and memory integration.
 
-## TASK 8: Writing Resource Article using Markdown
+#### Linux & Command Line Fundamentals
+- [The Linux Command Line by William Shotts (Free PDF)](https://linuxcommand.org/tlcl.php) — Comprehensive reference covering basic shell operations, environment management, and shell scripting.
+- [Linux Journey](https://linuxjourney.com/) — Interactive, modular guide breaking down Linux command line operations, text manipulation, permissions, process handling, and kernel mechanics.
+- [LinuxCommand.org Tutorials](https://linuxcommand.org/) — Structured, step-by-step tutorials on command execution, storage navigation, and terminal problem-solving.
+- [TLDR Pages](https://tldr.sh/) — Community-driven, simplified man pages focusing on practical, real-world command usage examples.
 
-Markdown is an easy-to-use markup language that is used with plain text to add formatting
-elements (headings, bulleted lists, URLs) to plain text without the use of a formal text editor or
-the use of HTML tags. Markdown is device agnostic and displays the writing format consistently
-across device type.
-Write a technical resource article on a topic of your choice and post it on the MARVEL website.
-Refer to the linked article for further details
+---
 
-[Link](https://hub.uvcemarvel.in/article/52f92f36-fb8a-45da-8f28-686bf4efefff)
+## Task 5: Operation Blackout — Decode the Hidden Message
 
+An unknown source has transmitted a mysterious sequence of numbers, and your mission is to uncover the secret hidden within it. The data may appear random, but with the right transformations, a meaningful pattern will emerge.
 
-## TASK 9: Tinkercad
+Using NumPy, investigate the encoded array, reshape it into a square matrix, experiment with transposing and reversing its elements, and visualize the result using Matplotlib. Follow the cryptic clues, piece together the original arrangement, and reveal the hidden message!
 
-Create a tinkercad account, get familiar with the application, understand the example circuits given and simulate a simple circuit using an ultrasonic sensor to estimate the distance between an obstacle and the sensor. Display the results on the serial monitor.
- 
-Create a radar system utilising an ultrasonic sensor and servo motor to detect objects within a certain range. The ultrasonic sensor emits sound waves and measures the time taken for them to bounce back, while the servo motor rotates the sensor to cover a wider area, providing a simple yet effective detection mechanism.
- RESOURCE: https://youtu.be/NwmcNCvUcDc?si=x2LAYMFiqs1SzLfI
- TASK OUTCOME: introduction to-
-·        TINKERCAD
-·        Working of ultrasonic sensor and servo motor
-·        Radar technology
-PRECAUTIONS/SAFETY MEASURES- NOT ANY
+Can you crack the code and complete Operation Blackout?
 
+- **Download the NumPy Array:** [https://drive.google.com/file/d/1lbzxfFuLJSNRXZqT63z8teFWCT44xfRk/view?usp=drivesdk](https://drive.google.com/file/d/1lbzxfFuLJSNRXZqT63z8teFWCT44xfRk/view?usp=drivesdk)
 
-## TASK 10: Speed Control of DC Motor
+### Learning Resources
 
-Explore basic techniques for controlling DC motors, understand the control DC motors using the
-L298N motor driver and the Arduino board. Using an UNO and H-Bridge L298N motor driver,
-control the speed of a 5V BO motor, try simulating this on tinkercad and then perform it on the
-hardware, Record videos of you doing the same.
+#### NumPy
+- [NumPy Quickstart — Official Documentation](https://numpy.org/doc/stable/user/quickstart.html) — Array shapes, indexing, slicing, and transformations.
+- [Indexing on ndarrays — NumPy](https://numpy.org/doc/stable/user/basics.indexing.html) — Array indexing and slicing.
+- [NumPy Tutorial — W3Schools](https://www.w3schools.com/python/numpy/default.asp) — Beginner-friendly reference.
+- [NumPy Tutorial — DataCamp](https://www.datacamp.com/tutorial/python-numpy-tutorial) — Tutorial covering common NumPy operations.
 
-[Reference]([https://www.geeksforgeeks.org/distance-measurement-using-ultrasonic-sensor-and-arduino/](https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/))
+#### Matplotlib
+- [Matplotlib Tutorials — Official Documentation](https://matplotlib.org/stable/tutorials/index.html) — Plotting fundamentals and customization.
+- [imshow() — Matplotlib Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html) — Display a 2D array as an image.
+- [Colormap Guide — Matplotlib](https://matplotlib.org/stable/users/explain/colors/colormaps.html) — Choose a colormap for visualizing the matrix.
+- [Matplotlib Tutorial — DataCamp](https://www.datacamp.com/tutorial/matplotlib-tutorial-python) — Introduction to plotting with Matplotlib.
 
+### YouTube Videos
+- [NumPy Tutorial for Beginners — Keith Galli](https://www.youtube.com/watch?v=QUT1VHiLmmI) — Arrays, slicing, reshaping, and other NumPy basics.
+- [NumPy Tutorial — Corey Schafer](https://www.youtube.com/watch?v=GB9ByFAIAH4) — A comprehensive explanation of NumPy fundamentals.
+- [Matplotlib Tutorial — freeCodeCamp](https://www.youtube.com/watch?v=3Xc3CA655Y4) — Creating and customizing plots.
+- [Introduction to Numerical Computing with NumPy — Enthought](https://www.youtube.com/results?search_query=Introduction+to+Numerical+Computing+with+NumPy+Alex+Chabot-Leclerc) — Search link for a practical NumPy workshop.
 
-## TASK 11: LED Toggle Using ESP32
+### Suggested Focus
+Before solving the puzzle, review array size and shape, `reshape()`, `transpose()`, slicing, and reversing with negative-step slices. Then review `imshow()` and colormaps. Check that the number of array elements matches the target matrix dimensions before reshaping.
 
-Learn the working of an ESP32 and create a standalone web server with an ESP32 that
-controls the LED connected with ESP32 GPIOs. Use the arduino IDE to code and upload the
-program to the ESP32. Learn to configure the IDE to upload code to an ESP32.
+> **Note:** The resources are supplementary learning materials. Students should understand and explain the transformations and matrix operations used in their own solutions.
 
-[Reference](https://microdigisoft.com/control-leds-using-esp32-web-server-in-arduino-ide/)
+---
 
+## Task 6: Build Your Own Brain — Linear Regression from Scratch
 
-## TASK 12: Soldering Prerequisites
+In this task, you will implement a Linear Regression model from scratch using NumPy to develop a deeper understanding of the underlying principles of machine learning. Using the California Housing dataset, you will train your model using Gradient Descent, investigate the effects of learning rate and feature scaling, and visualize the model’s learning process.
 
-(Soldering is to be done in presence of a coordinator)
+You will then compare your implementation with `sklearn.linear_model.LinearRegression` using standard evaluation metrics, including MSE, MAE, and R². Through this comparative analysis, you will gain practical insights into model optimization, performance evaluation, and the advantages of established machine learning libraries.
 
-Learn about the soldering equipment present in our lab, the solder, the soldering iron, soldering
-wick, flux, etc. Learn to use them and perform basic soldering on a perf board, for example a
-LED circuit in the presence of a coordinator and document the same.
+**Objective:** Develop a fundamental understanding of Linear Regression by implementing, evaluating, and comparing a custom model against a standard library implementation.
 
-[Reference](https://www.makerspaces.com/how-to-solder/)
+### Learning Resources
 
+#### Concepts and Implementation
+- [Google Machine Learning Crash Course: Linear Regression](https://developers.google.com/machine-learning/crash-course/linear-regression) — Introduction to linear regression, features, predictions, and loss.
+- [Google Machine Learning Crash Course: Gradient Descent](https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent) — How gradient descent updates model parameters.
+- [California Housing Dataset — scikit-learn](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset) — Dataset description and loading information.
+- [StandardScaler — scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) — Feature standardization.
+- [LinearRegression — scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html) — Reference for the library implementation.
+- [Regression Metrics — scikit-learn](https://scikit-learn.org/stable/modules/model_evaluation.html) — Evaluation metrics and model assessment.
+- [Coding Linear Regression from Scratch — Towards Data Science](https://towardsdatascience.com/coding-linear-regression-from-scratch-c42ec079902) — Supplementary implementation walkthrough.
+- [Linear Regression from Scratch — AskPython](https://www.askpython.com/python/examples/linear-regression-from-scratch) — Step-by-step coding reference.
 
-## TASK 13: 555 Astable Multivibrator
+### YouTube Videos
+- [Linear Regression, Clearly Explained — StatQuest](https://www.youtube.com/watch?v=7ArmBVF2dCs) — Understand the intuition behind fitting a line and R².
+- [Gradient Descent, Step-by-Step — StatQuest](https://www.youtube.com/watch?v=sDv4f4s2SB8) — Visual explanation of gradient descent and parameter updates.
+- [Linear Regression from Scratch with NumPy — MLTut](https://www.youtube.com/watch?v=DYM40H8ydnc) — Code a basic regression model with NumPy, MSE, and gradient descent.
+- [Building the Gradient Descent Algorithm — Nicholas Renotte](https://www.youtube.com/results?search_query=Building+the+Gradient+Descent+Algorithm+Nicholas+Renotte) — Practical coding walkthrough.
 
-Design a 555 astable multivibrator with duty cycle 60%, rig up the circuit on a breadboard and
-by using the probes observe the output of your circuit on the DSO.
-Resources:
+### Suggested Focus
+Start with the linear regression and gradient descent videos before coding. Then implement the model using NumPy, standardize features using training data only, and compare both models on the same held-out test set. Plot the loss over iterations and compare MSE, MAE, and R².
 
-- [Circuit](https://www.electronics-tutorials.ws/waveforms/555_oscillator.html)
+---
 
+## Task 7: Resource Article Writing using Markdown
 
-## TASK 14: Karnaugh Maps and Deriving the logic circuit
+Markdown is an easy-to-use markup language that is used with plain text to add formatting elements (headings, bulleted lists, URLs, code blocks) without the use of a formal text editor or HTML tags. Markdown is device-agnostic and displays formatting consistently across all device types.
 
-Description: For 4 cases, based on door lock/open and key pressed/not pressed. Determine the
-karnaugh map and make a burglar alarm using simple logic circuits. The buzzer or led blinks
-when certain conditions are met, you can use push buttons for the door and key.
+Write a technical resource article on a topic of your choice and publish it on the MARVEL website. Refer to the linked article for formatting guidelines and instructions.
 
-(Tip: use logic gates, use k-maps to figure out the working conditions.)
+**Resource Link:** [https://hub.uvcemarvel.in/article/52f92f36-fb8a-45da-8f28-686bf4efefff](https://hub.uvcemarvel.in/article/52f92f36-fb8a-45da-8f28-686bf4efefff)
 
+---
 
-## TASK 15: Active Participation
+## Task 8: Arduino vs ESP32 — Sensor-Based DC Motor Control
 
-Take part in any technical event, inter or intra college and submit the issued certificate of
-participation.
+> **Note:** Before working on this task, it is mandatory to have completed basic reading on Arduino Uno and ESP32. Do not proceed to hardware wiring without reviewing the prerequisites.
 
-Enroll for a MOOC and complete the course.
-## TASK 16: Datasheets Report Writing
-Topics: 1)MQ135 Gas sensor 2)L293D motor driver
-Task Description: Study the datasheet of any one of the above and write a report on it. Specify about the ICs used in L293D, PWM, H-bridge etc. In case of MQ 135, specify the calibrations for different gases and the Freundlich Absorption Theorem Graph.
+### Problem Statement
+Build a DC motor control system using Arduino UNO R3 and ESP32 to compare their pin configurations, analog inputs, PWM control, and voltage levels. Use an HC-SR04 ultrasonic sensor to measure distance and a potentiometer to control motor speed through a suitable motor driver. The motor must stop when an object comes closer than a predefined distance of 15 cm.
 
+Implement the same basic setup on both boards, ensuring that all sensor signals are compatible with the selected board. Finally, extend the ESP32 setup with a web page that allows users to control motor speed using a slider and stop the motor using a button. Identify what additional hardware the Arduino UNO would need to support similar Wi-Fi control.
 
-## Task 17: Introduction to VR
+**Simulation Tips (Simulate before hardware wiring):**
+1. **For Arduino Uno:** Use [Tinkercad Circuits](https://www.tinkercad.com/circuits), a beginner-friendly web-based simulator.
+2. **For ESP32:** Use [Wokwi](https://wokwi.com/), a web-based simulator with full ESP32 and Wi-Fi emulation.
 
-Familiarise yourself with what Virtual Reality is. Make a detailed study about what's the difference between VR and AR. Mention about the trends in the space and technology stack being developed. Make about Indian companies in this space. Make the report with detail. Using generative AI to generate this study can lead to disqualification.
+### Why You’ll Need This
+Arduino UNO and ESP32 can perform similar tasks, but their pin configurations, operating voltages (5V vs 3.3V), analog-to-digital converters (ADC), PWM capabilities, and wireless features differ. A circuit that works on one board may damage or fail to work safely on the other.
 
-![vrlol](https://gist.github.com/user-attachments/assets/f9c1c57b-5861-4ffb-9c2b-31f01f184531)
+Through this task, you will explore these differences by building and testing the same application on both boards. You will also learn why a sensor powered by 5V may require voltage level shifting (e.g., a voltage divider) before its output can be safely connected to an ESP32's 3.3V GPIO, and how PWM is implemented on each platform.
 
+### What You Must Build
+1. **Sensor and Motor Control:** Connect the HC-SR04, potentiometer, and DC motor through a suitable motor driver (e.g., L293D or L298N). Use the potentiometer to vary motor speed and display distance readings on the Serial Monitor. The motor must stop when an object is detected within 15 cm.
+2. **Implement on Both Boards:** Build and test the system using both Arduino UNO R3 and ESP32. Identify the required pins and adapt the wiring and code for each board.
+3. **Check Voltage Compatibility:** Determine the voltage requirements of each component. Use a voltage divider for the HC-SR04 Echo signal when connecting it to the ESP32, and ensure the potentiometer output stays within the board's permitted input voltage (3.3V max for ESP32).
+4. **Add Web-Based Control:** Extend the ESP32 program with an asynchronous web server hosting a web page with a speed slider (0% to 100%) and a Stop button. The web interface controls motor speed, while the distance-based stop condition overrides the selected speed for safety.
+5. **Compare the Boards:** Document the differences you observed in pin usage, analog readings, PWM implementation, voltage compatibility, and Wi-Fi setup. Explain what additional hardware would be required to provide similar web-based control using Arduino UNO R3.
 
-## TASK 18: Sad servers - "Like LeetCode for Linux"
-Sadservers is an excellent ground to test your Linux troubleshooting skills.  Here is a troubleshooting scenario: Command Line Murders. Troubleshoot and Make Sad Servers Happy!  
+### Learn Before You Build
+- [Arduino — PWM Output Guide](https://support.arduino.cc/hc/en-us/articles/9350537961500-Use-PWM-output-with-Arduino)
+- [ESP32 — LEDC PWM Documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html)
+- [Voltage Divider Tutorial — SparkFun](https://learn.sparkfun.com/tutorials/voltage-dividers)
 
-- [Command Line Murders (SadServers)](https://sadservers.com/scenario/command-line-murders)
-- [Linux Commands Tutorial (Hostinger)](https://www.hostinger.com/tutorials/linux-commands)
-- [Learn Linux Commands (GitHub)](https://github.com/vvvvvvss/learnLinux)   
+**Web Server Tutorials for ESP32:**
+- [ESP32 Web Server with Slider (PWM Motor Speed)](https://randomnerdtutorials.com/esp32-web-server-slider-pwm)
+- [ESP32 Web Server DC Motor Control](https://randomnerdtutorials.com/esp32-web-server-dc-motor-arduino)
 
-## Task 19: Make a Web app
-Using express create a resource library website where you can browse the resource articles, books etc which are available and also manage your account  
-[Reference](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
+---
+
+## Task 9: The "Joint" Venture — Soldering
+
+### What You Are Required to Do
+1. **Soldering Station Tour:** Go around the soldering station, inspect all the equipment, and identify what they are (soldering iron, brass sponge, flux, solder wick, helping hands, fume extractor).
+2. **Coordinator Briefing:** Gather your domain batchmates and get a one-time safety and technique briefing from any of your domain coordinators.
+3. **Perfboard Circuit Assembly:** Solder a simple circuit (**LED Fader Circuit**) on a perfboard. This must be completed individually.
+   - **Interactive Reference:** [Tinkercad LED Fade Circuit](https://www.tinkercad.com/things/9rZOusbVsdD-led-fade-circuit?sharecode=qBo7A4CtXjYR5wEstvgI52fzG5-VooVDijic3irOY-Y)
+   - **Components Required:**
+     - 1x 100 µF electrolytic capacitor
+     - 1x 1 kΩ resistor
+     - 1x 10 kΩ resistor
+     - 1x PN junction diode (1N4007 or similar)
+     - 1x LED of your choice
+     - 1x Pushbutton switch
+     - Power supply (5V – 9V)
+   - **Assembly Guidelines:**
+     - Wiring must be done using single-stranded wire.
+     - Tin the wire ends and soldering iron tip prior to soldering to ensure strong, clean solder joints.
+     - Verify circuit continuity before applying power.
+     - *Optional Credit:* Probe the fading waveform using an oscilloscope to observe the capacitor discharge curve.
+4. **Theoretical Knowledge:** Study the composition of solder wire (e.g., 60/40 leaded vs lead-free SAC305), types of flux (rosin, no-clean, water-soluble), and their roles in preventing oxidation.
+5. **Board Types:** Learn the differences and applications of Breadboards, Perfboards / Zero-PCBs, Stripboards, and custom etched PCBs:
+   - [Breadboard vs Perfboard vs PCB Tutorial](https://youtu.be/w0c3t0fJhXU?si=HzJQMDstaUzv_fAE)
+6. **Hazards and Safety Measures:** Review safety protocols regarding burns, toxic fumes, ventilation, and eye protection:
+   - [Soldering Safety & Hazards](https://youtu.be/AqvHogekDI4?si=GofaPrza3gG6vJOZ)
+
+---
+
+## Task 10: VRPS & Oscilloscope Fundamentals
+
+*Coming soon.*
+
+---
+
+## Task 11: 555 Astable Multivibrator with 60% Duty Cycle
+
+### Objective
+Design, build, and measure a 555 astable multivibrator. By the end you should be able to:
+- Choose the timing resistors ($R_1, R_2$) and capacitor ($C$) for a target frequency and duty cycle.
+- Wire the NE555 timer IC as an astable oscillator on a breadboard.
+- Measure frequency, period, high time ($t_{high}$), low time ($t_{low}$), and duty cycle on a Digital Storage Oscilloscope (DSO).
+- Explain any discrepancies between theoretical designed values and actual measured values.
+
+### The Task
+Design a 555 astable multivibrator whose output has a **60% duty cycle**, build it on a breadboard, and observe the output waveform on a DSO.
+
+- **Target Frequency:** Pick $1\text{ kHz}$ so the waveform is clear and easy to analyze on the scope.
+
+### Steps
+1. **Read First:** Go through the resources below until you can write the astable formulas for frequency and duty cycle in terms of $R_1, R_2$, and $C$, and explain what charges and discharges the capacitor in each half of the cycle.
+2. **Design on Paper:** From the target frequency ($1\text{ kHz}$) and $60\%$ duty cycle, derive the ratio of $R_1$ to $R_2$, choose a standard capacitor value $C$, and compute $R_1$ and $R_2$. Show all calculation steps.
+3. **Pick Real Parts:** Round your calculated resistor values to standard component values available in the lab and recompute the exact theoretical frequency and duty cycle.
+4. **Build:** Wire the NE555 on a breadboard with a 5V to 12V DC supply, your components $R_1, R_2, C$, and a $10\text{ nF}$ decoupling capacitor from Pin 5 (Control Voltage) to Ground. Check the datasheet pinout before powering on.
+5. **Probe:** Connect the DSO probe to Pin 3 (Output) and Ground. Adjust the timebase so that 2 to 3 full waveform cycles are visible, and verify that probe attenuation (1x/10x) matches the scope channel settings.
+6. **Measure:** Record the period, frequency, high time ($t_{high}$), and low time ($t_{low}$), and compute the measured duty cycle using the DSO's cursor or automatic measurement tools.
+7. **Compare:** Tabulate designed vs. calculated-with-real-parts vs. measured values, and explain any differences (component tolerances, internal transistor drops, parasitic breadboard capacitance).
+
+### Deliverables
+1. **Design Sheet:** Calculations showing the derived $R_1/R_2$ ratio, chosen capacitor value, calculated resistor values, and recalculated metrics for real parts.
+2. **Circuit Schematic:** Labeled diagram with pin numbers and component values.
+3. **Breadboard Photo:** High-resolution image of the wired circuit with DSO probe connected.
+4. **DSO Screenshot/Photo:** Waveform showing at least 2 full periods with measured frequency and duty cycle parameters visible.
+5. **Comparison Table:** Designed vs. Calculated vs. Measured values.
+6. **Short Analysis (3–4 sentences):** Why can a standard 2-resistor 555 astable circuit never achieve a duty cycle below $50\%$, and why is $60\%$ achievable without adding an external bypass diode?
+
+### Resources
+- [555 Timer Math — Derivation & Equations](https://www.mathscinotes.com/2014/04/555-timer-math/)
+- [Astable Multivibrator using IC 555 — IIT Kharagpur Virtual Lab](https://aec-iitkgp.vlabs.ac.in/exp/astable-multivibrator/pretest.html)
+- [NE555 Datasheet (Texas Instruments)](https://www.ti.com/lit/ds/symlink/ne555.pdf)
+- [Ben Eater — How a 555 Timer Works in Astable Mode (YouTube)](https://youtu.be/kRlSFm519Bo)
+- [555 Astable Working & Derivations (YouTube)](https://www.youtube.com/watch?v=iJYm_BGqa1A)
+- [Measuring Frequency, Duty Cycle, & Pulse Width on an Oscilloscope (YouTube)](https://www.youtube.com/watch?v=pty9YIdi9GU)
+
+---
+
+## Task 12: Prime Number Detector with a K-Map
+
+### Objective
+Learn Karnaugh Maps (K-maps) from scratch by applying one to design a practical combinational logic circuit. By the end you should be able to:
+- Construct and fill a 4-variable K-map from a truth table.
+- Group adjacent minterms in valid powers of two ($1, 2, 4, 8$) and extract the simplified Boolean expression.
+- Explain the principle of Gray code adjacency: why adjacent cells differ in only one variable, causing that variable to eliminate.
+- Implement the simplified logic circuit using basic gates and verify it against all 16 input combinations.
+
+### The Task
+Design and build a 4-input combinational logic circuit with inputs $D, C, B, A$ representing a 4-bit binary number from $0$ to $15$ ($A$ is the least significant bit, $D$ is the most significant bit). The output LED turns ON if and only if the decimal value of the input is a **prime number**.
+- *Note: Treat $0$ and $1$ as non-prime. Prime numbers between $0$ and $15$ are: $2, 3, 5, 7, 11, 13$.*
+
+Build and simulate the circuit in **Tinkercad Circuits** using 4 slide switches as inputs, an LED with a current-limiting resistor as output, and basic logic gates (AND, OR, NOT).
+
+### Steps
+1. **Read First:** Review the K-map resources below to understand legal group sizes, grouping rules, and edge wrap-around adjacency.
+2. **Truth Table:** Write all 16 rows ($0000_2$ to $1111_2$) and mark the output $Y = 1$ for prime inputs and $Y = 0$ for non-prime inputs.
+3. **Unsimplified Baseline Circuit:** Write the canonical Sum of Products (SOP) expression, build it in Tinkercad using basic gates, and record the total gate count.
+4. **Fill the K-Map:** Populate the 4-variable K-map shown below with your truth table values.
+5. **Group:** Identify the largest valid groups of 1s (remember that corners and opposite edges wrap around).
+6. **Derive Minimal SOP Equation:** Extract the simplified Boolean product term for each group and sum them together.
+7. **Build Simplified Circuit:** Construct the minimized logic circuit in Tinkercad and count the gates required.
+8. **Verify:** Test all 16 switch input combinations and verify that the output matches your truth table.
+
+#### 4-Variable K-Map Layout (Rows: $D\ C$, Columns: $B\ A$)
+
+| $D\ C$ \ $B\ A$ | 00 | 01 | 11 | 10 |
+| :---: | :---: | :---: | :---: | :---: |
+| **00** | $0$ | $1$ | $3$ | $2$ |
+| **01** | $4$ | $5$ | $7$ | $6$ |
+| **11** | $12$ | $13$ | $15$ | $14$ |
+| **10** | $8$ | $9$ | $11$ | $10$ |
+
+*Note: Gray code ordering ($00, 01, 11, 10$) ensures that only one bit changes between adjacent rows and columns.*
+
+### Deliverables
+1. **Tinkercad Link:** Public share link to your simulated Tinkercad circuit containing both the raw baseline and simplified circuits.
+2. **Design Worksheet:** Image/scan showing the truth table, populated K-map with circled groups, and final simplified equation.
+3. **Verification Table:** A table recording inputs, predicted output, and observed output for test cases.
+4. **Gate Count Comparison:** Comparison of gate and IC count: Unsimplified vs. Simplified.
+5. **Conceptual Explanation (3–4 sentences):** Why does grouping adjacent cells in a K-map allow a variable to be eliminated?
+
+### Resources
+- [Neso Academy — Karnaugh Map Playlist (YouTube)](https://www.youtube.com/playlist?list=PLBlnK6fEyqRiLCE18N9RN8ymscpMaGCfk)
+- [Karnaugh Maps with 4 Variables (YouTube)](https://www.youtube.com/watch?v=YJSqf_Z024w)
+- [Simulating Logic Gates in Tinkercad Circuits (YouTube)](https://www.youtube.com/watch?v=ZIMcNXUzTkA)
+- [Digital Electronics: Logic Gates Circuits on Tinkercad (YouTube)](https://www.youtube.com/playlist?list=PLI3bPjdny_5F5Ma16wtAC81AtzwtDB7-8)
+- [All About Circuits — Karnaugh Mapping Worksheet](https://www.allaboutcircuits.com/worksheets/karnaugh-mapping/)
+- [Tinkercad Circuits Simulator](https://www.tinkercad.com/circuits)
+
+---
+
+## Task 13: Active Participation
+
+- **Technical Events:** Participate in any technical event, hackathon, paper presentation, or competition (inter-college or intra-college) and submit the certificate of participation or achievement.
+- **MOOC Completion:** Enroll in and successfully complete an approved Massive Open Online Course (MOOC) on platforms like NPTEL, Coursera, edX, or Swayam.
+
+---
+
+## Task 14: Datasheets Report Writing
+
+Study the official technical datasheet of any **one** of the following components and write a comprehensive analysis report:
+
+1. **MQ-135 Gas Sensor IC:**
+   - Operating principles and target gas sensitivities ($NH_3$, $NO_x$, alcohol, benzene, smoke, $CO_2$).
+   - Circuit schematic and load resistance ($R_L$) calibration curve.
+   - Freundlich Adsorption Isotherm / sensitivity characteristics graph.
+2. **L293D Dual H-Bridge Motor Driver:**
+   - Internal block diagram and H-Bridge working mechanism.
+   - Logic truth table for forward, reverse, and braking states.
+   - Voltage ratings ($V_{CC1}$ vs $V_{CC2}$), peak current capabilities, internal clamp diode protection, and PWM speed control interfacing.
+
+---
+
+## Task 15: SadServers — "Like LeetCode for Linux"
+
+SadServers is an interactive platform to test your real-world Linux troubleshooting and debugging skills under realistic production scenarios.
+
+**Scenario:** Complete the **"Command Line Murders"** investigation challenge. Troubleshoot the environment, parse through the clues using terminal tools, and make the sad servers happy!
+
+### Resources & Links
+- [SadServers — Command Line Murders Scenario](https://sadservers.com/scenario/command-line-murders)
+- [Linux Commands Tutorial — Hostinger](https://www.hostinger.com/tutorials/linux-commands)
+- [Learn Linux Commands Reference (GitHub)](https://github.com/vvvvvvss/learnLinux)
