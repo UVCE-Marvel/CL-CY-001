@@ -23,7 +23,7 @@ First learn how a 3D printer works. Then design your own simple parts, a cube an
 - [Introduction to 3D Printer](https://www.youtube.com/watch?v=kM5zRO3n9-Y): how a 3D printer works.
 - [PLA Printing Guide](https://standardprintco.com/read/pla-filament-printing-guide-how-to-succeed-printing-pla-and-troubleshooting-common-problems-step-by-step): bed temperature, infill and other PLA settings.
 - [Types of 3D Printing](https://formlabs.com/asia/blog/fdm-vs-sla-vs-sls-how-to-choose-the-right-3d-printing-technology/): FDM vs SLA vs SLS.
-- [Designing a Simple Part in Onshape for 3D Printing](https://hub.uvcemarvel.in/article/52f92f36-fb8a-45da-8f28-686bf4efefff): Refer the Resource Article.
+- [Designing a Simple Part in Onshape for 3D Printing](https://github.com/prajwaldhannur4-code/3d-design-onshape-guide/blob/main/README.md): Refer the Resource Article.
 
 ### Suggested Focus
 
