@@ -334,6 +334,7 @@ Work through these resources before starting the implementation. Test the basic 
 1. Go around the soldering station, look at all the equipment and try to figure out what they do and what they are.
 2. Gather your domain batchmates and get a one-time briefing from any of your domain coordinators on this task.
 3. Solder a simple circuit (Led Fader Circuit) on a perf-board. To be done Individually.
+   - Video Guide: [UVCE MARVEL : Soldering on perfboard](https://www.youtube.com/watch?v=2coq-J3rIDQ)
    - Circuit link: [Tinkercad LED Fade Circuit](https://www.tinkercad.com/things/9rZOusbVsdD-led-fade-circuit?sharecode=qBo7A4CtXjYR5wEstvgI52fzG5-VooVDijic3irOY-Y)
    - Refer to the above link for circuit connections.
    - Oscilloscope is optional but using it would get you additional credit points.
@@ -343,6 +344,8 @@ Work through these resources before starting the implementation. Test the basic 
    - Tinning is an advisory method while soldering wires, as it assures contacts are stable and not loose.
 4. Theoretical knowledge buildup - Composition of Solder wire, flux.
 5. Types of board - PCB, BreadBoard, ZeroPCB (Perfboard):
+   - [MARVEL : Circuit on the breadboard](https://www.youtube.com/watch?v=gTYItNRoV-A)
+   - [UVCE MARVEL : Soldering on perfboard](https://www.youtube.com/watch?v=2coq-J3rIDQ)
    - [Board Types Resource](https://youtu.be/w0c3t0fJhXU?si=HzJQMDstaUzv_fAE)
 6. Hazards and Safety measures of Soldering. Resource : [https://youtu.be/AqvHogekDI4?si=GofaPrza3gG6vJOZ](https://youtu.be/AqvHogekDI4?si=GofaPrza3gG6vJOZ)
 
